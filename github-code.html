@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            tertiary: "#525355",
+            "inverse-primary": "#ffb2b7",
+            "on-tertiary-fixed-variant": "#454749",
+            "secondary-fixed": "#e2e2e2",
+            "on-tertiary-container": "#edecef",
+            "inverse-surface": "#2f3131",
+            "surface-container-low": "#f3f3f4",
+            "on-primary-container": "#ffe7e8",
+            "primary-container": "#d31145",
+            "surface-container-high": "#e8e8e8",
+            "surface-dim": "#dadada",
+            "on-secondary-container": "#646464",
+            "on-primary-fixed": "#40000e",
+            "tertiary-fixed-dim": "#c6c6c8",
+            "surface-bright": "#f9f9f9",
+            "inverse-on-surface": "#f0f1f1",
+            "on-surface-variant": "#5c3f41",
+            "on-secondary-fixed": "#1b1b1b",
+            "on-error": "#ffffff",
+            "surface-tint": "#be003b",
+            "primary-fixed": "#ffdadb",
+            "surface-container-lowest": "#ffffff",
+            outline: "#906f70",
+            "tertiary-container": "#6a6b6d",
+            "on-background": "#1a1c1c",
+            "on-secondary-fixed-variant": "#474747",
+            "surface-container": "#eeeeee",
+            background: "#f9f9f9",
+            "on-primary": "#ffffff",
+            error: "#ba1a1a",
+            primary: "#a80033",
+            "brand-red": "#D31145",
+            "tertiary-fixed": "#e3e2e4",
+            "secondary-container": "#e2e2e2",
+            "primary-fixed-dim": "#ffb2b7",
+            "on-primary-fixed-variant": "#91002b",
+            "error-container": "#ffdad6",
+            "outline-variant": "#e4bdbf",
+            "surface-variant": "#e2e2e2",
+            "surface-container-highest": "#e2e2e2",
+            "secondary-fixed-dim": "#c6c6c6",
+            "on-secondary": "#ffffff",
+            surface: "#f9f9f9",
+            "on-surface": "#1a1c1c",
+            "on-tertiary": "#ffffff",
+            secondary: "#5e5e5e",
+            "on-error-container": "#93000a",
+            "on-tertiary-fixed": "#1a1c1d"
+          },
+          borderRadius: {
+            DEFAULT: "0.125rem",
+            lg: "0.25rem",
+            xl: "0.5rem",
+            full: "0.75rem"
+          },
+          fontFamily: {
+            headline: ["Manrope"],
+            body: ["Manrope"],
+            label: ["Manrope"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="font-body text-white bg-white">
+  <nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
+    <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">SFS Marketplace</div>
+    <div class="hidden md:flex items-center gap-6">
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="#Athletics">Athletics</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="#Parents">Parents</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="#MS Toys">MS Toys</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="#MS Bags">MS Bags</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="#MS Accessories">MS Accessories</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="#MS Wearables">MS Wearables</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="#ES Toys">ES Toys</a>
+    </div>
+    <div class="flex items-center gap-4"></div>
+  </nav>
+
+  <header class="pt-32 pb-20 px-8 overflow-hidden bg-white">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="z-10">
+        <span class="font-bold tracking-[0.2em] text-xs mb-4 block text-primary">DESIGNED BY 8TH GRADE INNOVATORS</span>
+        <h1 class="text-6xl md:text-8xl font-black tracking-tighter mb-6 leading-[0.9] text-black">
+          Visionary <br/><span class="text-black">Ventures</span>
+        </h1>
+        <p class="text-lg max-w-md leading-relaxed mb-8 text-black/80">
+          Discover the cutting edge of student entrepreneurship. Every piece in this collection is a testament to the creativity, technical skill, and bold vision of Seoul Foreign School's emerging designers.
+        </p>
+      </div>
+
+      <div class="relative">
+        <div class="aspect-square bg-[#2a000c] rounded-lg overflow-hidden relative group flex items-center justify-center p-8">
+          <!-- CHANGE THE src BELOW AFTER YOU UPLOAD THE LOGO TO GITHUB -->
+          <!-- If the file is in the SAME folder as this HTML file, use: -->
+          <!-- src="visionary-ventures-logo.png" -->
+          <!-- If the file is in an assets folder, use: -->
+          <!-- src="assets/visionary-ventures-logo.png" -->
+          <img
+            alt="Visionary Ventures logo"
+            class="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+            src="assets/visionary-ventures-logo.png"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"></div>
+        </div>
+
+        <div class="absolute -bottom-6 -left-6 bg-black p-6 text-white hidden md:block">
+          <p class="text-3xl font-black italic">EST. 2026</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="bg-brand-red">
+    <div class="max-w-7xl mx-auto px-8 py-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10">
+      <section class="bg-brand-red p-12 flex flex-col justify-between border border-white/5" id="Athletics">
+        <div>
+          <span class="text-black font-bold tracking-widest text-xs mb-2 block uppercase">Collection 01</span>
+          <h2 class="text-4xl font-black tracking-tighter text-white mb-4">Athletics</h2>
+          <p class="text-white/90 text-sm mb-8 leading-relaxed">High-performance gear for the modern student athlete, blending durability with sleek academic aesthetics.</p>
+        </div>
+        <a class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-bold tracking-widest text-[10px] hover:bg-white hover:text-black transition-all group/btn w-fit" href="#">
+          VIEW COLLECTION
+          <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </section>
+
+      <section class="bg-brand-red p-12 flex flex-col justify-between border border-white/5" id="Parents">
+        <div>
+          <span class="text-black font-bold tracking-widest text-xs mb-2 block uppercase">Collection 02</span>
+          <h2 class="text-4xl font-black tracking-tighter text-white mb-4">Parents</h2>
+          <p class="text-white/90 text-sm mb-8 leading-relaxed">Curated gifts and premium lifestyle essentials designed specifically for the heart of our community.</p>
+        </div>
+        <a class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-bold tracking-widest text-[10px] hover:bg-white hover:text-black transition-all group/btn w-fit" href="#">
+          VIEW COLLECTION
+          <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </section>
+
+      <section class="bg-brand-red p-12 flex flex-col justify-between border border-white/5" id="MS Toys">
+        <div>
+          <span class="text-black font-bold tracking-widest text-xs mb-2 block uppercase">Collection 03</span>
+          <h2 class="text-4xl font-black tracking-tighter text-white mb-4">MS Toys</h2>
+          <p class="text-white/90 text-sm mb-8 leading-relaxed">Mechanical wonders and engineer-grade playthings that bridge the gap between education and innovation.</p>
+        </div>
+        <a class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-bold tracking-widest text-[10px] hover:bg-white hover:text-black transition-all group/btn w-fit" href="#">
+          VIEW COLLECTION
+          <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </section>
+
+      <section class="bg-brand-red p-12 flex flex-col justify-between border border-white/5" id="MS Bags">
+        <div>
+          <span class="text-black font-bold tracking-widest text-xs mb-2 block uppercase">Collection 04</span>
+          <h2 class="text-4xl font-black tracking-tighter text-white mb-4">MS Bags</h2>
+          <p class="text-white/90 text-sm mb-8 leading-relaxed">Modern utility carriers for the mobile scholar, emphasizing ergonomics and minimalist sustainable design.</p>
+        </div>
+        <a class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-bold tracking-widest text-[10px] hover:bg-white hover:text-black transition-all group/btn w-fit" href="#">
+          VIEW COLLECTION
+          <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </section>
+
+      <section class="bg-brand-red p-12 flex flex-col justify-between border border-white/5" id="MS Accessories">
+        <div>
+          <span class="text-black font-bold tracking-widest text-xs mb-2 block uppercase">Collection 05</span>
+          <h2 class="text-4xl font-black tracking-tighter text-white mb-4">MS Accessories</h2>
+          <p class="text-white/90 text-sm mb-8 leading-relaxed">Small design objects with significant visual impact. Tech-ready accessories for the connected student.</p>
+        </div>
+        <a class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-bold tracking-widest text-[10px] hover:bg-white hover:text-black transition-all group/btn w-fit" href="#">
+          VIEW COLLECTION
+          <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </section>
+
+      <section class="bg-brand-red p-12 flex flex-col justify-between border border-white/5" id="MS Wearables">
+        <div>
+          <span class="text-black font-bold tracking-widest text-xs mb-2 block uppercase">Collection 06</span>
+          <h2 class="text-4xl font-black tracking-tighter text-white mb-4">MS Wearables</h2>
+          <p class="text-white/90 text-sm mb-8 leading-relaxed">Apparel reimagined through a student lens. Streetwear influences meet traditional school identity.</p>
+        </div>
+        <a class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-bold tracking-widest text-[10px] hover:bg-white hover:text-black transition-all group/btn w-fit" href="#">
+          VIEW COLLECTION
+          <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </section>
+
+      <section class="bg-brand-red p-12 flex flex-col justify-between border border-white/5" id="ES Toys">
+        <div>
+          <span class="text-black font-bold tracking-widest text-xs mb-2 block uppercase">Collection 07</span>
+          <h2 class="text-4xl font-black tracking-tighter text-white mb-4">ES Toys</h2>
+          <p class="text-white/90 text-sm mb-8 leading-relaxed">Educational play, crafted for early innovation. Safe, tactile, and designed to inspire the next generation.</p>
+        </div>
+        <a class="inline-flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg font-bold tracking-widest text-[10px] hover:bg-white hover:text-black transition-all group/btn w-fit" href="#">
+          VIEW COLLECTION
+          <span class="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </section>
+    </div>
+  </main>
+</body>
+</html>
