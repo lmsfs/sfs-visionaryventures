@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed": "#e3e2e4",
+                    "on-surface-variant": "#5c3f41",
+                    "on-primary-fixed": "#40000e",
+                    "tertiary": "#525355",
+                    "tertiary-fixed-dim": "#c6c6c8",
+                    "surface-container-highest": "#e2e2e2",
+                    "on-tertiary-fixed-variant": "#454749",
+                    "outline-variant": "#e4bdbf",
+                    "outline": "#906f70",
+                    "surface-tint": "#be003b",
+                    "surface-container": "#eeeeee",
+                    "on-error-container": "#93000a",
+                    "secondary-fixed-dim": "#c6c6c6",
+                    "on-tertiary-container": "#edecef",
+                    "on-background": "#1a1c1c",
+                    "primary-fixed": "#ffdadb",
+                    "inverse-on-surface": "#f0f1f1",
+                    "surface": "#f9f9f9",
+                    "tertiary-container": "#6a6b6d",
+                    "secondary-container": "#e2e2e2",
+                    "inverse-surface": "#2f3131",
+                    "on-tertiary-fixed": "#1a1c1d",
+                    "background": "#f9f9f9",
+                    "on-secondary-container": "#646464",
+                    "on-secondary-fixed": "#1b1b1b",
+                    "on-primary-fixed-variant": "#91002b",
+                    "on-tertiary": "#ffffff",
+                    "on-surface": "#1a1c1c",
+                    "primary-container": "#d31145",
+                    "error": "#ba1a1a",
+                    "primary": "#a80033",
+                    "inverse-primary": "#ffb2b7",
+                    "secondary-fixed": "#e2e2e2",
+                    "on-secondary": "#ffffff",
+                    "on-primary-container": "#ffe7e8",
+                    "surface-container-lowest": "#ffffff",
+                    "on-error": "#ffffff",
+                    "surface-container-high": "#e8e8e8",
+                    "surface-variant": "#e2e2e2",
+                    "on-primary": "#ffffff",
+                    "surface-dim": "#dadada",
+                    "secondary": "#5e5e5e",
+                    "surface-bright": "#f9f9f9",
+                    "surface-container-low": "#f3f3f4",
+                    "error-container": "#ffdad6",
+                    "on-secondary-fixed-variant": "#474747",
+                    "primary-fixed-dim": "#ffb2b7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<nav class="fixed top-0 w-full z-50 bg-white/85 dark:bg-zinc-900/85 backdrop-blur-md shadow-sm dark:shadow-none">
+<div class="flex justify-between items-center px-8 py-4 max-w-full mx-auto">
+<div class="text-2xl font-black tracking-tighter text-zinc-900 dark:text-zinc-50">SFS Marketplace</div>
+<div class="hidden md:flex items-center space-x-8 font-manrope text-sm font-medium tracking-tight">
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:opacity-80 transition-opacity duration-200" href="#">Athletics</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:opacity-80 transition-opacity duration-200" href="#">Parents</a>
+<a class="text-red-700 dark:text-red-500 border-b-2 border-red-700 dark:border-red-500 pb-1" href="#">MS Toys</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:opacity-80 transition-opacity duration-200" href="#">MS Bags</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:opacity-80 transition-opacity duration-200" href="#">MS Accessories</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:opacity-80 transition-opacity duration-200" href="#">MS Wearables</a>
+<a class="text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 hover:opacity-80 transition-opacity duration-200" href="#">ES Toys</a>
+</div>
+<div class="flex items-center space-x-6 text-red-700 dark:text-red-500 invisible">
+<!-- Icons removed per request -->
+<button class="active:scale-95 transition-transform"><span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span></button>
+<button class="active:scale-95 transition-transform"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 md:px-12 lg:px-24 max-w-7xl mx-auto">
+<header class="mb-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+<div class="max-w-3xl">
+<span class="font-label text-[0.75rem] tracking-widest text-primary font-bold uppercase mb-4 block">CURATED COLLECTION</span>
+<h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-on-surface leading-[0.85] mb-8">
+                MS Toys<br/><span class="text-primary italic">Innovation Hub.</span>
+</h1>
+<p class="text-on-surface-variant text-xl leading-relaxed font-light">
+                Hand-crafted and digitally fabricated toys designed by Seoul Foreign Middle School students. Each piece represents a blend of engineering rigor and creative play.
+            </p>
+</div>
+<div class="w-full aspect-square md:aspect-video bg-surface-container-highest overflow-hidden">
+<img alt="Hero Image - Innovation Hub Showcase" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLvFaGfjD1_KRr7oKmRNaQ9XXKt9QYNRgPq1efKf6EsAcSOyEBa6FgULXfXEv8n4aClsAC3vS_wwZ-lxA6i2qlK27GJAdhuTAndWNW3GE4elToDHTYKGSG8jim2OXriZNQgVBfQj6AQ1sLeLclX8zmwMZISszafdtF0nv-AoiqNbxzukF_kCu4k0OLuifCMQwiR4Trno-gAlwztRLmZUIcBfhBpYhM00Vj7hje7kT4xMHqLtMzXgoDyYiZZLzOBXDVlmBUBXVQ9A"/>
+</div>
+</header>
+<section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+<div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+<img alt="The Kinetic Orbiter" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLvFaGfjD1_KRr7oKmRNaQ9XXKt9QYNRgPq1efKf6EsAcSOyEBa6FgULXfXEv8n4aClsAC3vS_wwZ-lxA6i2qlK27GJAdhuTAndWNW3GE4elToDHTYKGSG8jim2OXriZNQgVBfQj6AQ1sLeLclX8zmwMZISszafdtF0nv-AoiqNbxzukF_kCu4k0OLuifCMQwiR4Trno-gAlwztRLmZUIcBfhBpYhM00Vj7hje7kT4xMHqLtMzXgoDyYiZZLzOBXDVlmBUBXVQ9A"/>
+</div>
+<h3 class="font-headline text-xl font-bold tracking-tight mb-2">The Kinetic Orbiter</h3>
+<p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Precision-balanced desk toy using magnetic levitation and laser-cut maple wood.</p>
+<div class="mt-auto">
+<div class="text-lg font-bold mb-4">₩45,000</div>
+<button class="w-full bg-primary text-on-primary py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+<div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+<img alt="Neo-Seoul Bricks" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5e068cRylp-fDhLGMrxdeFCxnMiCji350HNmm0N1IbKP3ZckWIwPBz5Bd6iOrxs-bkDuAFQgCzzy-hymGSllOqQdIJjFeuU83TM1MVkIc6sAyRlG1X-tUEVGghchpMBG16E_ngm11KgZFmVKgavSb5O4nyFXL7RdWDLnwH3ZaY_IuxLy25G89y3dVX27EzA3EuBuHTsFnePti-4YcWiZq23OlQH_oLS73-3Kr5j8ZB2TJHkhGHWeIw73o9nWSihWZiTw9gHlg-A"/>
+</div>
+<h3 class="font-headline text-xl font-bold tracking-tight mb-2">Neo-Seoul Bricks</h3>
+<p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Modular architectural blocks inspired by Seoul's skyline. 3D-printed with recycled PLA.</p>
+<div class="mt-auto">
+<div class="text-lg font-bold mb-4">₩28,500</div>
+<button class="w-full bg-primary text-on-primary py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+<div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+<img alt="Cipher Box" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHLZppeF1wj4CWrHXYtjaqzFQQT5UuIyqMxEtxv_xDenseKisnFRtbfXrT8uVLoxFiWIdlBYrxOSIAG5qje27CckJVjnyS-S0WQ0kZA69lDMe-2s-EZ4e6lzxmmeonk0UfAAjGvHlFa-AFPvgYgAhNxo6plmdvLAIb32g2CcZTvpBhKmoJ5P-LlX0eBpaj8BTZ8UKuDhsxk4iMkwnbCWJ73VPiHXhdo-iSwZJYP6dTDQbzTZvOl3wOvrTM2VeydDt8_kgPxbfwoQ"/>
+</div>
+<h3 class="font-headline text-xl font-bold tracking-tight mb-2">Cipher Box</h3>
+<p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A multi-stage puzzle box featuring student-designed mechanical locks and codes.</p>
+<div class="mt-auto">
+<div class="text-lg font-bold mb-4">₩32,000</div>
+<button class="w-full bg-primary text-on-primary py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+<div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+<img alt="Sol-Track Racer" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVjOcbHlcz_Rr2dHqLpOGz9T8hY3UaPinTVTNVr0GSlznTEr0DPTPi7k2Io68bVNN5kc1PWU6JEYVtx7HoQvA6HicKGj_0_GD2JB3wuXy6fk5WlST8K2_8qCuupVB6lkro8IfItbEoQ6DqVO64dNL9aZZ63TPNUivOoxe89pdJimgNdKvFZdOPznlOgsXdnlsg9Z0sWlVLhW8w4SxIQLhAHwbTzKLV_EeYeVsAa7U2DYAmXrOsErP1WMMTxMmKVe7m_iO_juynaw"/>
+</div>
+<h3 class="font-headline text-xl font-bold tracking-tight mb-2">Sol-Track Racer</h3>
+<p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Performance-driven solar racer. Features custom-molded tires and solar array.</p>
+<div class="mt-auto">
+<div class="text-lg font-bold mb-4">₩55,000</div>
+<button class="w-full bg-primary text-on-primary py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+<div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+<img alt="Atmosphere Globe" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5e068cRylp-fDhLGMrxdeFCxnMiCji350HNmm0N1IbKP3ZckWIwPBz5Bd6iOrxs-bkDuAFQgCzzy-hymGSllOqQdIJjFeuU83TM1MVkIc6sAyRlG1X-tUEVGghchpMBG16E_ngm11KgZFmVKgavSb5O4nyFXL7RdWDLnwH3ZaY_IuxLy25G89y3dVX27EzA3EuBuHTsFnePti-4YcWiZq23OlQH_oLS73-3Kr5j8ZB2TJHkhGHWeIw73o9nWSihWZiTw9gHlg-A"/>
+</div>
+<h3 class="font-headline text-xl font-bold tracking-tight mb-2">Atmosphere Globe</h3>
+<p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Interactive light globe that reacts to sound and movement using embedded sensors.</p>
+<div class="mt-auto">
+<div class="text-lg font-bold mb-4">₩38,000</div>
+<button class="w-full bg-primary text-on-primary py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+<div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+<img alt="Vector Blocks" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLvFaGfjD1_KRr7oKmRNaQ9XXKt9QYNRgPq1efKf6EsAcSOyEBa6FgULXfXEv8n4aClsAC3vS_wwZ-lxA6i2qlK27GJAdhuTAndWNW3GE4elToDHTYKGSG8jim2OXriZNQgVBfQj6AQ1sLeLclX8zmwMZISszafdtF0nv-AoiqNbxzukF_kCu4k0OLuifCMQwiR4Trno-gAlwztRLmZUIcBfhBpYhM00Vj7hje7kT4xMHqLtMzXgoDyYiZZLzOBXDVlmBUBXVQ9A"/>
+</div>
+<h3 class="font-headline text-xl font-bold tracking-tight mb-2">Vector Blocks</h3>
+<p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Physics-based stacking blocks that explore balance and center of mass.</p>
+<div class="mt-auto">
+<div class="text-lg font-bold mb-4">₩24,500</div>
+<button class="w-full bg-primary text-on-primary py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</button>
+</div>
+</div>
+<!-- Product Card 7 -->
+<div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+<div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+<img alt="Mechanical Loom" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHLZppeF1wj4CWrHXYtjaqzFQQT5UuIyqMxEtxv_xDenseKisnFRtbfXrT8uVLoxFiWIdlBYrxOSIAG5qje27CckJVjnyS-S0WQ0kZA69lDMe-2s-EZ4e6lzxmmeonk0UfAAjGvHlFa-AFPvgYgAhNxo6plmdvLAIb32g2CcZTvpBhKmoJ5P-LlX0eBpaj8BTZ8UKuDhsxk4iMkwnbCWJ73VPiHXhdo-iSwZJYP6dTDQbzTZvOl3wOvrTM2VeydDt8_kgPxbfwoQ"/>
+</div>
+<h3 class="font-headline text-xl font-bold tracking-tight mb-2">Mechanical Loom</h3>
+<p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A desk-sized weaving machine that demonstrates historical engineering principles.</p>
+<div class="mt-auto">
+<div class="text-lg font-bold mb-4">₩42,000</div>
+<button class="w-full bg-primary text-on-primary py-3 font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</button>
+</div>
+</div>
+</section>
+</main>
+</body></html>
