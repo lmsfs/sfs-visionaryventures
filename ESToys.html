@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-primary-container": "#ffe7e8",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-container": "#d31145",
+                        "surface-container-low": "#f3f3f4",
+                        "tertiary-fixed-dim": "#c6c6c8",
+                        "inverse-primary": "#ffb2b7",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-error": "#ffffff",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#646464",
+                        "on-secondary-fixed-variant": "#474747",
+                        "on-secondary-fixed": "#1b1b1b",
+                        "surface-variant": "#e2e2e2",
+                        "on-tertiary": "#ffffff",
+                        "tertiary-container": "#6a6b6d",
+                        "secondary": "#5e5e5e",
+                        "on-secondary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface-container-highest": "#e2e2e2",
+                        "on-primary-fixed-variant": "#91002b",
+                        "on-tertiary-fixed-variant": "#454749",
+                        "on-error-container": "#93000a",
+                        "error": "#ba1a1a",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-fixed": "#ffdadb",
+                        "primary-fixed-dim": "#ffb2b7",
+                        "background": "#f9f9f9",
+                        "outline": "#906f70",
+                        "on-background": "#1a1c1c",
+                        "on-primary-fixed": "#40000e",
+                        "surface-bright": "#f9f9f9",
+                        "tertiary": "#525355",
+                        "surface-container": "#eeeeee",
+                        "on-surface-variant": "#5c3f41",
+                        "inverse-surface": "#2f3131",
+                        "outline-variant": "#e4bdbf",
+                        "surface-tint": "#be003b",
+                        "on-primary": "#ffffff",
+                        "secondary-container": "#e2e2e2",
+                        "on-tertiary-fixed": "#1a1c1d",
+                        "on-tertiary-container": "#edecef",
+                        "on-surface": "#1a1c1c",
+                        "secondary-fixed-dim": "#c6c6c6",
+                        "tertiary-fixed": "#e3e2e4",
+                        "surface": "#f9f9f9",
+                        "secondary-fixed": "#e2e2e2",
+                        "primary": "#a80033"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/95 backdrop-blur-md flex justify-between items-center px-8 h-20 max-w-full border-b border-surface-container font-['Manrope'] tracking-tight">
+<div class="text-2xl font-black tracking-tighter text-stone-900">Innovation Lab</div>
+<div class="flex items-center space-x-6"><div class="hidden md:flex items-center space-x-6">
+<a class="text-xs font-bold uppercase tracking-tight text-stone-600 hover:text-primary transition-colors" href="#">Athletics</a>
+<a class="text-xs font-bold uppercase tracking-tight text-stone-600 hover:text-primary transition-colors" href="#">Parents</a>
+<a class="text-xs font-bold uppercase tracking-tight text-stone-600 hover:text-primary transition-colors" href="#">MS Toys</a>
+<a class="text-xs font-bold uppercase tracking-tight text-stone-600 hover:text-primary transition-colors" href="#">MS Bags</a>
+<a class="text-xs font-bold uppercase tracking-tight text-stone-600 hover:text-primary transition-colors" href="#">MS Accessories</a>
+<a class="text-xs font-bold uppercase tracking-tight text-stone-600 hover:text-primary transition-colors" href="#">Wearables</a>
+<a class="text-xs font-bold uppercase tracking-tight text-primary transition-colors" href="#">ES Toys</a>
+</div></div>
+</nav>
+<main class="pt-20">
+<!-- Hero Section -->
+<header class="relative w-full min-h-[700px] flex flex-col md:flex-row items-center bg-white">
+<div class="w-full md:w-1/2 px-8 md:px-16 py-16 md:py-24 z-10">
+<p class="text-xs font-bold tracking-[0.2em] text-primary uppercase mb-4">THE CURATOR EXHIBITION</p>
+<h1 class="text-6xl md:text-8xl font-black tracking-tighter leading-none text-on-surface mb-6">Elementary<br/>School Toys</h1>
+<p class="text-lg text-on-surface-variant font-medium leading-relaxed mb-8 max-w-lg">
+                Discover a collection of handcrafted and student-engineered building sets designed to inspire the next generation of innovators.
+            </p>
+</div>
+<div class="w-full md:w-1/2 h-full min-h-[500px] md:min-h-[700px] relative overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Close-up of premium wooden architectural building blocks with minimalist geometric shapes and soft studio lighting on a neutral grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQvCQ6pfmjzr6rVi7gT8p8Pw7e525nCrQLvCj1-V6pw-f4h66WKni_U0zLxj82X82zzP0Astnpv7xUtGr09z7eEhE7IcxxI1rVCU48Sg2dQm4U_F89D7xN30J9lC64NMyyy4WuFy2B-b6ZmhGpY8u08sH62uWgI8znRLyFv-7WmjLGHrWRKuVCStNEfDY5I5zDlJD-LLd1nsbBSM8sPlgPUFQsmwcZmQ8JLlkb9Ouoah7UYwTWaiwvhMHwftHotw2YCj64yVAF2Q"/>
+</div>
+</header>
+<!-- Category Filters / Chips -->
+<!-- Product Grid - Consistent Items -->
+<section class="px-8 md:px-16 pb-24">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<article class="group">
+<div class="aspect-square bg-surface-container-lowest overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end student-made modular wooden puzzle with organic curves and dark stained walnut accents on a crisp white surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9EbxGSvBaTS9WfWfNUpd-37zzI068DEvxZaFxCAOKtR_wcbmxjZ0-oanXUSFo-hVh7LuZEdWpgG4QD0XPMYTrRnRCarpY1MrQuaW8WqnyQe-cJlDjExNNaR2bGwC8J6ckXN9O_hvqMWz3O0QU_yYVoUic0ypi5rMKm2ASxAwictv_YNHTViF0HdyUJ-DqNzisdsyQ9Eqgp1xPRNHJfa0ihAlnn8uYpVGaiTyX2uDAQeeFKDVc2fnn-fHEz06gGJK7qUlJmqFYfA"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Modular Cortex Build</h3>
+<span class="text-primary font-bold">$124</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Engineered by Grade 5 Honors Studio for spatial reasoning and advanced motor skills.</p>
+<button class="w-full py-3 bg-stone-900 text-white font-bold text-xs uppercase tracking-widest rounded hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="group">
+<div class="aspect-square bg-surface-container-lowest overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist geometric logic blocks in primary colors arranged in an artistic stack with soft ambient shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFk0Z2T6-hU8gvm9nojXh_HYfzLZba_azGWL4GzuK1cJP0MCN20tr4lDjUNdiSwQW9jc-UM2MT417oWM4IW-Nu61mmJovWKXPAomBCRWLBW7rBjIj5S8nmRXpUY_iTJRjnuJIhslJbAp3CUMCQFbZC0cYUkz9KLpui42dEeN4BNW7WL5hw8AIFdz8q21o0Eub3xrMhL7E3ygmjwU806PxG1PeB1Ik0FkePxVI3bD5G7D2OOxqdGz80nCScmv2QjO9uNuVhYKB3OA"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Prism Logic Stack</h3>
+<span class="text-primary font-bold">$89</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Sustainable beechwood blocks featuring precision-cut interlocking geometric forms.</p>
+<button class="w-full py-3 bg-stone-900 text-white font-bold text-xs uppercase tracking-widest rounded hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</article>
+<!-- Product Card 4 (Repurposed from Card 3 pathrunner info to match grid style) -->
+<article class="group">
+<div class="aspect-square bg-surface-container-lowest overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Advanced student-built marble run kit made from recycled aluminum and glass tubes in a professional laboratory setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDIPSS1rnmj0rhx8R8aV8axLO-hQRmJEIf71eQqB7FyK55ILoPaFhSgXmRkIgaD9_LoLjfpw1IA2hDsRnFYEvH_oZgkd0FnX2NXxQ2M6Z1kXOi6DXGk4OS0CME4NwN-kCqcp66U86KxIhi7sS2Njx_8u20s-Wnf0YCxFQWOewK3SAtkq5m6IKdefaQwqGGyr4Hj3E_z6-yUIHLIscTsCpKdGQvLzUZ5U6lE8w4c2Czdg9_thCUOSkyaZMr6772CNQTfj1I75kLqw"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Kinetic Pathrunner</h3>
+<span class="text-primary font-bold">$295</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">A collaborative engineering project. Includes 140 modular components for building complex tracks.</p>
+<button class="w-full py-3 bg-stone-900 text-white font-bold text-xs uppercase tracking-widest rounded hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="group">
+<div class="aspect-square bg-surface-container-lowest overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of hand-painted wooden toy animals with exquisite detail and premium matte finish" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzhaX_fkaQO7D3RU26B7mNA-1IxhYlpLhPPHEVxx8g5RgyrQBaV_xCGepc3VjLUTrLJl4PlX57fPzuxhmN2cF_GHVbinvbODql42Q1VJ5ity5GFYJBw-7On0F9jNjOHj1sHc47NGaMdcWgOkRkQkni3qLX644d3hew3mEoNPfXp9tmpqkyrEiQjfqnCk1EtdnEzroc_icfIHeqOhAP7p2RTYCCwkroi8Dw1qpmTf4vSFlgqu7Im8iEC6fd-xeyIirpc8GEBcJiQg"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Artisan Safari Set</h3>
+<span class="text-primary font-bold">$156</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Limited release hand-painted sculptures from the Upper School Fine Arts Mentorship.</p>
+<button class="w-full py-3 bg-stone-900 text-white font-bold text-xs uppercase tracking-widest rounded hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</article>
+<!-- Product Card 5 -->
+<article class="group">
+<div class="aspect-square bg-surface-container-lowest overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Scientific magnetic building spheres and rods with metallic finish against a dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJD98xybnGBBhI6ma_y5Q_9QE53e6doSBSJFp3lCPGjW68mN1KBExA01Uu64yNdzePEhPPA7PT_ge42QhsjqEFrYR7Iy-8CElw7ANsKhntQxzvWFYEATh4JadDHC6RQ3F3NhiJFjvLWFPpgGs5AOHdr-kqH-GhodBT5LCZ30EeGvAbYxnTqA_eNmSBKTAOI0U9vYsflsZWdVXQDbauKRefGnZqwHhSLPTstBHl2I1T5ZDF9wZVSkt031Mfm0pwaoXEPHbGJgjjfQ"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Mag-Flux Sculptor</h3>
+<span class="text-primary font-bold">$210</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">High-grade neodymium core magnets for complex structural prototyping and sculpture.</p>
+<button class="w-full py-3 bg-stone-900 text-white font-bold text-xs uppercase tracking-widest rounded hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</article>
+<!-- Product Card 6 -->
+<article class="group">
+<div class="aspect-square bg-surface-container-lowest overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist chalkboard blocks for custom architectural drawing in a bright creative playroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5hBSeG0BIZaoPNP4rJHf1MgDOQvTaflCah3mIODpOXV9jTAv4tNLgKeXGXUqKJa7g8pnPpB0wBqh3lqa7zPkDA5aK6WEb3gMIl_9fgaUhNLhcIDfMPdcqiF1MxOtLnjr90C690bjULxYERueEXtDiNGSlCmE6L5qtvapqYKMaxVDmWPpwH7iauYN6A7lcGRxsUwM9g11pSN0qEyS-Yk3CBWvjXc6arDZbCBJPAibz6wBMRFDNkcQCzjJyPgVkdzXyq882bmkt9w"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Chalk-Block City</h3>
+<span class="text-primary font-bold">$74</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">Matte black finish blocks that invite children to draw their own facades.</p>
+<button class="w-full py-3 bg-stone-900 text-white font-bold text-xs uppercase tracking-widest rounded hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</article>
+<!-- Product Card 7 -->
+<article class="group">
+<div class="aspect-square bg-surface-container-lowest overflow-hidden rounded-lg mb-6">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Student-designed board game with high-quality cardboard components and geometric patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBMt3wxPglZq_b6XpvKCr1oBK7yHOqDdP1STLvg1bzimlyUlGd1l5roCWudfhibiWRrnJX1keNDGKidClP6Fr45QUQRTiUK3YN9eVs1OqZX2fcBc0Gln_-jEqLdCm6K1XKUzrp5JSmx7XBJA0BlbfERgGHix9T57eFc_QVufF1NLt4fnzlw_nVCSLw_jc7eSVXeyxjc8Rjx2mWqlMW9di6QXky5mWaH32Eei7DUz_7XX_Zq2_yen-I0hAHWNemOl3m1-Vxa_-QNQ"/>
+</div>
+<div class="space-y-3">
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold tracking-tight text-on-surface">Vector Quest</h3>
+<span class="text-primary font-bold">$42</span>
+</div>
+<p class="text-sm text-on-surface-variant leading-relaxed">An strategy board game teaching basic coordinate geometry through play.</p>
+<button class="w-full py-3 bg-stone-900 text-white font-bold text-xs uppercase tracking-widest rounded hover:bg-primary transition-colors">Add to Cart</button>
+</div>
+</article>
+</div>
+</section>
+</main>
+<!-- Side Navigation Bar (Desktop Overlay/Fixed) -->
+<aside class="fixed left-0 top-0 h-screen w-72 bg-white dark:bg-stone-950 flex-col hidden lg:flex border-r border-transparent z-40 transform -translate-x-full hover:translate-x-0 transition-transform duration-500 group/sidebar">
+<div class="p-8 h-full flex flex-col justify-between">
+<div>
+<div class="mb-12">
+<h2 class="text-xl font-bold text-[#a80033]">The Curator</h2>
+<p class="text-[10px] uppercase tracking-widest text-stone-500">Elite Student Innovation</p>
+</div>
+<nav class="space-y-2">
+<a class="flex items-center gap-4 p-3 rounded bg-stone-100 text-[#a80033] font-black border-l-4 border-[#a80033] font-['Manrope'] uppercase tracking-widest text-xs" href="#">
+<span class="material-symbols-outlined">toys</span> ES Toys
+                </a>
+<a class="flex items-center gap-4 p-3 rounded text-stone-500 hover:bg-stone-50 hover:translate-x-1 transition-all font-['Manrope'] uppercase tracking-widest text-xs" href="#">
+<span class="material-symbols-outlined">smart_toy</span> MS Toys
+                </a>
+<a class="flex items-center gap-4 p-3 rounded text-stone-500 hover:bg-stone-50 hover:translate-x-1 transition-all font-['Manrope'] uppercase tracking-widest text-xs" href="#">
+<span class="material-symbols-outlined">sports_handball</span> Athletics
+                </a>
+<a class="flex items-center gap-4 p-3 rounded text-stone-500 hover:bg-stone-50 hover:translate-x-1 transition-all font-['Manrope'] uppercase tracking-widest text-xs" href="#">
+<span class="material-symbols-outlined">family_restroom</span> Parents
+                </a>
+</nav>
+</div>
+<div class="pt-8 border-t border-stone-100">
+<a class="flex items-center gap-4 p-3 text-stone-500 hover:text-primary transition-colors font-['Manrope'] uppercase tracking-widest text-[10px]" href="#">
+<span class="material-symbols-outlined">settings</span> Settings
+            </a>
+</div>
+</div>
+</aside>
+<!-- Footer -->
+<footer class="bg-stone-50 w-full py-10 px-8 md:px-16 flex flex-col md:flex-row justify-center items-center gap-12 border-t border-surface-container">
+<p class="font-['Manrope'] text-sm text-stone-500 text-center">© 2024 Academic Curator Marketplace. All rights reserved.</p>
+</footer>
+</body></html>
