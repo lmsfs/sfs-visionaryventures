@@ -1,244 +1,183 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title> Clothing | SFS Marketplace </title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-primary-container": "#ffe7e8",
-                    "surface-container-lowest": "#ffffff",
-                    "primary-container": "#d31145",
-                    "surface-container-low": "#f3f3f4",
-                    "tertiary-fixed-dim": "#c6c6c8",
-                    "inverse-primary": "#ffb2b7",
-                    "inverse-on-surface": "#f0f1f1",
-                    "on-error": "#ffffff",
-                    "surface-dim": "#dadada",
-                    "on-secondary-container": "#646464",
-                    "on-secondary-fixed-variant": "#474747",
-                    "on-secondary-fixed": "#1b1b1b",
-                    "surface-variant": "#e2e2e2",
-                    "on-tertiary": "#ffffff",
-                    "tertiary-container": "#6a6b6d",
-                    "secondary": "#5e5e5e",
-                    "on-secondary": "#ffffff",
-                    "error-container": "#ffdad6",
-                    "surface-container-highest": "#e2e2e2",
-                    "on-primary-fixed-variant": "#91002b",
-                    "on-tertiary-fixed-variant": "#454749",
-                    "on-error-container": "#93000a",
-                    "error": "#ba1a1a",
-                    "surface-container-high": "#e8e8e8",
-                    "primary-fixed": "#ffdadb",
-                    "primary-fixed-dim": "#ffb2b7",
-                    "background": "#f9f9f9",
-                    "outline": "#906f70",
-                    "on-background": "#1a1c1c",
-                    "on-primary-fixed": "#40000e",
-                    "surface-bright": "#f9f9f9",
-                    "tertiary": "#525355",
-                    "surface-container": "#eeeeee",
-                    "on-surface-variant": "#5c3f41",
-                    "inverse-surface": "#2f3131",
-                    "outline-variant": "#e4bdbf",
-                    "surface-tint": "#be003b",
-                    "on-primary": "#ffffff",
-                    "secondary-container": "#e2e2e2",
-                    "on-tertiary-fixed": "#1a1c1d",
-                    "on-tertiary-container": "#edecef",
-                    "on-surface": "#1a1c1c",
-                    "secondary-fixed-dim": "#c6c6c6",
-                    "tertiary-fixed": "#e3e2e4",
-                    "surface": "#f9f9f9",
-                    "secondary-fixed": "#e2e2e2",
-                    "primary": "#a80033"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Manrope"],
-                    "body": ["Manrope"],
-                    "label": ["Manrope"]
-            }
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Clothing | SFS Marketplace</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-fixed": "#e3e2e4",
+            "on-surface-variant": "#5c3f41",
+            "on-primary-fixed": "#40000e",
+            "tertiary": "#525355",
+            "tertiary-fixed-dim": "#c6c6c8",
+            "surface-container-highest": "#e2e2e2",
+            "on-tertiary-fixed-variant": "#454749",
+            "outline-variant": "#e4bdbf",
+            "outline": "#906f70",
+            "surface-tint": "#be003b",
+            "surface-container": "#eeeeee",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#c6c6c6",
+            "on-tertiary-container": "#edecef",
+            "on-background": "#1a1c1c",
+            "primary-fixed": "#ffdadb",
+            "inverse-on-surface": "#f0f1f1",
+            "surface": "#f9f9f9",
+            "tertiary-container": "#6a6b6d",
+            "secondary-container": "#e2e2e2",
+            "inverse-surface": "#2f3131",
+            "on-tertiary-fixed": "#1a1c1d",
+            "background": "#f9f9f9",
+            "on-secondary-container": "#646464",
+            "on-secondary-fixed": "#1b1b1b",
+            "on-primary-fixed-variant": "#91002b",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1a1c1c",
+            "primary-container": "#d31145",
+            "error": "#ba1a1a",
+            "primary": "#a80033",
+            "inverse-primary": "#ffb2b7",
+            "secondary-fixed": "#e2e2e2",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#ffe7e8",
+            "surface-container-lowest": "#ffffff",
+            "on-error": "#ffffff",
+            "surface-container-high": "#e8e8e8",
+            "surface-variant": "#e2e2e2",
+            "on-primary": "#ffffff",
+            "surface-dim": "#dadada",
+            "secondary": "#5e5e5e",
+            "surface-bright": "#f9f9f9",
+            "surface-container-low": "#f3f3f4",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#474747",
+            "primary-fixed-dim": "#ffb2b7"
           },
-        },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
+        }
       }
-    </script>
-<style>
-        body { font-family: 'Manrope', sans-serif; }
-             .material-symbols-outlined {
-                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-              }
-
-        .editorial-grid {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-                gap: 2rem;
-                align-items: stretch;
-              }
-      
-        .product-card {
-          display: flex;
-          flex-direction: column;
-          height: 100%;
-        }
-
-        .product-card .product-copy {
-                display: flex;
-          flex-direction: column;
-          flex: 1;
-        }
-
-        .product-card .product-footer {
-          margin-top: auto;
-        }
-
-        @media (max-width: 1024px) {
-          .editorial-grid {
-            grid-template-columns: repeat(2, 1fr);
-          }
-        }
-
-        @media (max-width: 640px) {
-          .editorial-grid {
-            grid-template-columns: 1fr;
-          }
-        }
-      </style>
-
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body { font-family: 'Manrope', sans-serif; }
+  </style>
 </head>
-<body class="bg-surface text-on-surface">
-<!-- Top Navigation Bar, links to the other pages -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
-  <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
-    <a href="index.html">SFS Marketplace</a>
-  </div>
+<body class="bg-surface text-on-surface antialiased">
 
-  <div class="hidden md:flex items-center gap-6">
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html"> Toys</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html"> Bags</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html"> Accessories</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html"> Clothing </a>
-  </div>
+  <nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
+    <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
+      <a href="index.html">SFS Marketplace</a>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html">Toys</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html">Bags</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html">Accessories</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html">Clothing</a>
+    </div>
+    <div class="flex items-center gap-4"></div>
+  </nav>
 
-  <div class="flex items-center gap-4"></div>
-</nav>
-
-      
-<main class="pt-20">
-<!-- Hero Section Updated -->
-<section class="bg-white py-16 md:py-24 overflow-hidden">
-<div class="container mx-auto px-8">
-<div class="flex flex-col md:flex-row items-center justify-between gap-12 lg:gap-20">
-<!-- Title on the Left -->
-<div class="w-full md:w-1/2 lg:w-5/12">
-<span class="font-label uppercase tracking-widest text-sm text-primary font-extrabold block mb-6">Clothing</span>
-<h1 class="text-6xl lg:text-8xl font-black tracking-tighter leading-[0.9] text-on-surface mb-8">
-                            Wearable <br/> <span class="text-primary italic">Innovation</span>
-</h1>
-<p class="text-on-surface-variant text-lg lg:text-xl max-w-lg mb-10 leading-relaxed">
-                            Student-designed apparel. From the digital lab to the physical world, exploring the intersection of identity and utility.
-                        </p>
-</div>
-<!-- Image on the Right -->
-<div class="w-full md:w-1/2 lg:w-7/12 relative">
-<div class="relative w-full aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
-<img alt="Student wearing a custom hoodie in a minimalist studio setting" class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-1000" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOYQy0gFt6Opp-3fNIvzjtoDNVnd2lk6f8Lmj4UffDSAuKwxwJhb0tK3_lWMa7kxrK5QrjpShb_-_A1hmma0Dns8F6bIOG649VV6bsWNpeNFuNd1j_coECdpTSVqfF2im1YHjXrdEEBykYw0T3KRB0ZK1R2eTiSya-KPRIOM7nFAhcuzM8aV982EtZmQ1U5Gukl0qduCpE7Uy2K4B-g8NPvJbXKFezl7ZwPzCtTA9mfSQZfcAJq3KpKt3Bl5ny5Fs_TkLaFoUMvg"/>
-</div>
-<div class="absolute -z-10 -bottom-12 -right-12 w-80 h-80 bg-primary/5 rounded-full blur-3xl"></div>
-<div class="absolute -z-10 -top-12 -left-12 w-64 h-64 bg-stone-100 rounded-full blur-3xl"></div>
-</div>
-</div>
-</div>
-
-</section>
-<!-- Category Filters -->
-<!-- Product Grid Section (7 items preserved) -->
-<section class="pb-24 px-8">
-<div class="container mx-auto">
-<div class="editorial-grid">
-<!-- SNEA Sweatshirt -->
-      <article class="group cursor-pointer product-card">
-            <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
-                  <img alt="Apex Performance Tee - Red cotton with embroidery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-1.png"/>
-            </div>
-            <h3 class="text-xl font-bold text-on-surface mb-1">Modern Archive Black Hoodie</h3>
-            <p class="text-on-surface-variant text-sm mb-4">A cosy black hoodie made from a blend of polyester and cotton, the customizable Modern Archive hoodie is a staple in any closet and an ideal piece for summer. </p>
-           <div class="flex justify-between items-center">
-        <span class="font-black text-on-surface">₩55,000</span>
-        <a href="https://forms.gle/TcqPbcMhHHsDe1dC9" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-4 py-2 rounded text-xs font-bold hover:bg-primary-container transition-all uppercase tracking-wider">
-          Buy Now
-        </a>
-</div>
-
-      </article>
-<!-- AKC Sweatshirt  -->
-      <article class="group cursor-pointer product-card">
-
-      <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
-            <img alt="Shadow Tech Hoodie - Black heavyweight oversized" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-2.png"/>
+  <main class="pt-32 pb-24 px-8 md:px-12 lg:px-24 max-w-7xl mx-auto">
+    <header class="mb-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div class="max-w-3xl">
+        <span class="font-label text-[0.75rem] tracking-widest text-primary font-bold uppercase mb-4 block">CURATED COLLECTION</span>
+        <h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-on-surface leading-[0.85] mb-8">
+          Clothing
+        </h1>
+        <p class="text-on-surface-variant text-xl leading-relaxed font-light">
+          Student-designed apparel that blends school identity, comfort, and wearable creativity.
+        </p>
       </div>
-      <h3 class="text-xl font-bold text-on-surface mb-1">Missing</h3>
-      <p class="text-on-surface-variant text-sm mb-4">MISSING </p>
-      <div class="flex justify-between items-center">
-              <span class="font-black text-on-surface">₩55,000</span>
-      <a href="PASTE HERE" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-4 py-2 rounded text-xs font-bold hover:bg-primary-container transition-all uppercase tracking-wider">Buy Now 
-      </a>
-</article>
-<!-- IBJ Sweatshirt -->
-     <article class="group cursor-pointer product-card">
-      <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
-            <img alt="Binary Graphic Tee - White with red geometric print" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-3.png"/>
+      <div class="w-full aspect-square md:aspect-video bg-surface-container-highest overflow-hidden">
+        <img alt="Clothing collection hero image" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOYQy0gFt6Opp-3fNIvzjtoDNVnd2lk6f8Lmj4UffDSAuKwxwJhb0tK3_lWMa7kxrK5QrjpShb_-_A1hmma0Dns8F6bIOG649VV6bsWNpeNFuNd1j_coECdpTSVqfF2im1YHjXrdEEBykYw0T3KRB0ZK1R2eTiSya-KPRIOM7nFAhcuzM8aV982EtZmQ1U5Gukl0qduCpE7Uy2K4B-g8NPvJbXKFezl7ZwPzCtTA9mfSQZfcAJq3KpKt3Bl5ny5Fs_TkLaFoUMvg"/>
       </div>
-      <h3 class="text-xl font-bold text-on-surface mb-1">SFS essentials zip-up hoodie</h3>
-      <p class="text-on-surface-variant text-sm mb-4">SFS Essentials introduces an upgraded zip-up hoodie that builds on the strengths of our previous designs, offering improved comfort, durability, and style tailored perfectly for everyday school wear..</p>
-      <div class="flex justify-between items-center">
-              <span class="font-black text-on-surface">₩49,000</span>
-      <a href="https://forms.gle/5iTfsLoAjjuii1vy5" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-4 py-2 rounded text-xs font-bold hover:bg-primary-container transition-all uppercase tracking-wider">Buy Now 
-      </a>
-      </article>
-<!-- JEJ Sweatshirt -->
-      <article class="group cursor-pointer product-card">
-      <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
-      <img alt="Aero Shell Jacket - Red and white technical jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-4.jpg"/>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+        <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+          <img alt="Modern Archive Black Hoodie" class="w-full h-full object-cover transition-all duration-500" src="Clothing-1.png"/>
+        </div>
+        <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Modern Archive Black Hoodie</h3>
+        <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A cosy black hoodie made from a blend of polyester and cotton, the customizable Modern Archive hoodie is a staple in any closet and an ideal piece for summer.</p>
+        <div class="mt-auto">
+          <div class="text-lg font-bold mb-4">₩55,000</div>
+          <a href="https://forms.gle/TcqPbcMhHHsDe1dC9" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+        </div>
       </div>
-      <h3 class="text-xl font-bold text-on-surface mb-1">SFS House Hoodies</h3>
-      <p class="text-on-surface-variant text-sm mb-4">Our House Hoodies will feature simple, modern designs with a house animal on the back of the hoodie.</p>
-      <div class="flex justify-between items-center">
-              <span class="font-black text-on-surface">₩49,000</span>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTdiSBHaEZArn-9KSj3xzW4Biegxut9igE-YbYx6VRmrTmMA/viewform?usp=header" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-4 py-2 rounded text-xs font-bold hover:bg-primary-container transition-all uppercase tracking-wider">Buy Now 
-      </a>
-      </article>
-<!-- Row 2: Item 5 -->
-      <article class="group cursor-pointer product-card">
-      <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
-      <img alt="SFS Reversible Hoodie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-5.jpg"/>
+
+      <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+        <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+          <img alt="Missing clothing product" class="w-full h-full object-cover transition-all duration-500" src="Clothing-2.png"/>
+        </div>
+        <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Missing</h3>
+        <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">MISSING</p>
+        <div class="mt-auto">
+          <div class="text-lg font-bold mb-4">₩55,000</div>
+          <a href="PASTE HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+        </div>
       </div>
-      <h3 class="text-xl font-bold text-on-surface mb-1">SFS Reversible Hoodie</h3>
-      <p class="text-on-surface-variant text-sm mb-4">A unique, aesthetic reversible hoodie that has two design in one. </p>
-      <div class="flex justify-between items-center">
-              <span class="font-black text-on-surface">₩55,000</span>
-      <a href="https://forms.gle/8zHZCkHF7LWfMu7A8r" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-4 py-2 rounded text-xs font-bold hover:bg-primary-container transition-all uppercase tracking-wider">Buy Now 
-      </a>
-      </article>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="bg-stone-50 py-12 px-8 flex items-center gap-6 font-['Manrope'] text-sm text-stone-500 border-t border-stone-200"><div class="container mx-auto px-8 flex justify-center w-full"><div class="text-stone-400">© 2024 Academic Curator Marketplace</div></div></footer>
-</body></html>
+
+      <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+        <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+          <img alt="SFS essentials zip-up hoodie" class="w-full h-full object-cover transition-all duration-500" src="Clothing-3.png"/>
+        </div>
+        <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS Essentials Zip-Up Hoodie</h3>
+        <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">SFS Essentials introduces an upgraded zip-up hoodie that builds on the strengths of our previous designs, offering improved comfort, durability, and style tailored perfectly for everyday school wear.</p>
+        <div class="mt-auto">
+          <div class="text-lg font-bold mb-4">₩49,000</div>
+          <a href="https://forms.gle/5iTfsLoAjjuii1vy5" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+        <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+          <img alt="SFS House Hoodies" class="w-full h-full object-cover transition-all duration-500" src="Clothing-4.jpg"/>
+        </div>
+        <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS House Hoodies</h3>
+        <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Our House Hoodies will feature simple, modern designs with a house animal on the back of the hoodie.</p>
+        <div class="mt-auto">
+          <div class="text-lg font-bold mb-4">₩49,000</div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeTdiSBHaEZArn-9KSj3xzW4Biegxut9igE-YbYx6VRmrTmMA/viewform?usp=header" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+        <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+          <img alt="SFS Reversible Hoodie" class="w-full h-full object-cover transition-all duration-500" src="Clothing-5.jpg"/>
+        </div>
+        <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS Reversible Hoodie</h3>
+        <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A unique, aesthetic reversible hoodie that has two design in one.</p>
+        <div class="mt-auto">
+          <div class="text-lg font-bold mb-4">₩55,000</div>
+          <a href="https://forms.gle/8zHZCkHF7LWfMu7A8r" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
