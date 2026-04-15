@@ -1,215 +1,184 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-primary-container": "#ffe7e8",
-                    "surface-container-lowest": "#ffffff",
-                    "primary-container": "#d31145",
-                    "surface-container-low": "#f3f3f4",
-                    "tertiary-fixed-dim": "#c6c6c8",
-                    "inverse-primary": "#ffb2b7",
-                    "inverse-on-surface": "#f0f1f1",
-                    "on-error": "#ffffff",
-                    "surface-dim": "#dadada",
-                    "on-secondary-container": "#646464",
-                    "on-secondary-fixed-variant": "#474747",
-                    "on-secondary-fixed": "#1b1b1b",
-                    "surface-variant": "#e2e2e2",
-                    "on-tertiary": "#ffffff",
-                    "tertiary-container": "#6a6b6d",
-                    "secondary": "#5e5e5e",
-                    "on-secondary": "#ffffff",
-                    "error-container": "#ffdad6",
-                    "surface-container-highest": "#e2e2e2",
-                    "on-primary-fixed-variant": "#91002b",
-                    "on-tertiary-fixed-variant": "#454749",
-                    "on-error-container": "#93000a",
-                    "error": "#ba1a1a",
-                    "surface-container-high": "#e8e8e8",
-                    "primary-fixed": "#ffdadb",
-                    "primary-fixed-dim": "#ffb2b7",
-                    "background": "#f9f9f9",
-                    "outline": "#906f70",
-                    "on-background": "#1a1c1c",
-                    "on-primary-fixed": "#40000e",
-                    "surface-bright": "#f9f9f9",
-                    "tertiary": "#525355",
-                    "surface-container": "#eeeeee",
-                    "on-surface-variant": "#5c3f41",
-                    "inverse-surface": "#2f3131",
-                    "outline-variant": "#e4bdbf",
-                    "surface-tint": "#be003b",
-                    "on-primary": "#ffffff",
-                    "secondary-container": "#e2e2e2",
-                    "on-tertiary-fixed": "#1a1c1d",
-                    "on-tertiary-container": "#edecef",
-                    "on-surface": "#1a1c1c",
-                    "secondary-fixed-dim": "#c6c6c6",
-                    "tertiary-fixed": "#e3e2e4",
-                    "surface": "#f9f9f9",
-                    "secondary-fixed": "#e2e2e2",
-                    "primary": "#a80033"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Manrope"],
-                    "body": ["Manrope"],
-                    "label": ["Manrope"]
-            }
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Bags | SFS Marketplace</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-container": "#ffe7e8",
+            "surface-container-lowest": "#ffffff",
+            "primary-container": "#d31145",
+            "surface-container-low": "#f3f3f4",
+            "tertiary-fixed-dim": "#c6c6c8",
+            "inverse-primary": "#ffb2b7",
+            "inverse-on-surface": "#f0f1f1",
+            "on-error": "#ffffff",
+            "surface-dim": "#dadada",
+            "on-secondary-container": "#646464",
+            "on-secondary-fixed-variant": "#474747",
+            "on-secondary-fixed": "#1b1b1b",
+            "surface-variant": "#e2e2e2",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#6a6b6d",
+            "secondary": "#5e5e5e",
+            "on-secondary": "#ffffff",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#e2e2e2",
+            "on-primary-fixed-variant": "#91002b",
+            "on-tertiary-fixed-variant": "#454749",
+            "on-error-container": "#93000a",
+            "error": "#ba1a1a",
+            "surface-container-high": "#e8e8e8",
+            "primary-fixed": "#ffdadb",
+            "primary-fixed-dim": "#ffb2b7",
+            "background": "#f9f9f9",
+            "outline": "#906f70",
+            "on-background": "#1a1c1c",
+            "on-primary-fixed": "#40000e",
+            "surface-bright": "#f9f9f9",
+            "tertiary": "#525355",
+            "surface-container": "#eeeeee",
+            "on-surface-variant": "#5c3f41",
+            "inverse-surface": "#2f3131",
+            "outline-variant": "#e4bdbf",
+            "surface-tint": "#be003b",
+            "on-primary": "#ffffff",
+            "secondary-container": "#e2e2e2",
+            "on-tertiary-fixed": "#1a1c1d",
+            "on-tertiary-container": "#edecef",
+            "on-surface": "#1a1c1c",
+            "secondary-fixed-dim": "#c6c6c6",
+            "tertiary-fixed": "#e3e2e4",
+            "surface": "#f9f9f9",
+            "secondary-fixed": "#e2e2e2",
+            "primary": "#a80033"
           },
-        },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
+        }
       }
-    </script>
-<style>
-        body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; }
-        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
-    </style>
+    }
+  </script>
+  <style>
+    body { font-family: 'Manrope', sans-serif; background-color: #f9f9f9; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
 </head>
-<body class="text-on-surface">
-<!-- Top Navigation Bar, links to the other pages -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
-  <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
-    <a href="index.html">SFS Marketplace</a>
+<body class="bg-surface text-on-surface antialiased">
+
+  <nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
+    <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
+      <a href="index.html">SFS Marketplace</a>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html">Toys</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html">Bags</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html">Accessories</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html">Clothing</a>
+    </div>
+    <div class="flex items-center gap-4"></div>
+  </nav>
+
+  <main class="pt-32 pb-24 px-8 md:px-12 lg:px-24 max-w-7xl mx-auto">
+    <header class="mb-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div class="max-w-3xl">
+        <span class="font-label text-[0.75rem] tracking-widest text-primary font-bold uppercase mb-4 block">CURATED COLLECTION</span>
+        <h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-on-surface leading-[0.85] mb-8">
+          Bags
+        </h1>
+        <p class="text-on-surface-variant text-xl leading-relaxed font-light">
+          Bags designed by students for students.
+        </p>
+      </div>
+      <div class="w-full aspect-square md:aspect-video bg-surface-container-highest overflow-hidden">
+        <img alt="Bags collection hero image" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUw2NMe8xTmjRAuRdAR80Cr0t78iT_xdXJ8BD56Hv9p2Ogo5U6T1iR1xxRT9URoYiED9k8j8jfB5o00tlRXtGxX7z31uAyZ55Y2Sb5sF_2EOQZt2mllGWLWWIdKijr2jXZFntLSfdk2Y3xfTMwQXKNAcl4PljcGee4_9weKdVtt1i0CrEdOMTfhKvMd9Ej0FWqtCimiMgR4JXaGwqyxw42FBxHxGLeRWOP6o1kIpOU9tkp0893_eZS-bDo_a6MuYRYLUHqu4xPlg"/>
+      </div>
+    </header>
+
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <!-- SCRR - Bag -->
+ <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="SFS Computer Case" class="w-full h-full object-cover transition-all duration-500" src="/Users/laurenmusshorn/Desktop/Codex/Bags/Bags-1.jpg"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS Computer Case</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A SFS branded red computer case made out of faux (synthetic) leather. It is eco-friendly, waterproof, and uses fabric and cotton from old recycled SFS lost and found clothing for the interior and stuffing. It has front and back pockets for extra storage, and utilises a shoulder strap for maximum comfort and portability.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩29,000</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
   </div>
-
-  <div class="hidden md:flex items-center gap-6">
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html"> Toys</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html"> Bags</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html"> Accessories</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html"> Clothing </a>
+<!--CYN bag-->
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Missing bag product" class="w-full h-full object-cover transition-all duration-500" src="/Users/laurenmusshorn/Desktop/Codex/Bags/Bags-2.png"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Missing</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Description missing.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">Price Missing</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
   </div>
-
-  <div class="flex items-center gap-4"></div>
-</nav>
-
-
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative w-full min-h-[600px] flex items-center bg-white border-b border-stone-100">
-<div class="container mx-auto px-8 md:px-16 grid grid-cols-1 md:grid-cols-2 items-center gap-12 py-16">
-<div class="max-w-2xl text-left order-2 md:order-1">
-<span class="label-md uppercase tracking-[0.3em] text-primary font-bold mb-4 block">Collection 2024</span>
-<h1 class="text-6xl md:text-8xl font-black text-on-surface tracking-tighter leading-none mb-6"> <br/><span class="text-primary italic">Bags.</span></h1>
-<p class="text-on-surface-variant text-lg md:text-xl font-medium max-w-md leading-relaxed mb-8">
-                    Bags designed by students for students.
-                </p>
-</div>
-<div class="relative flex justify-center items-center order-1 md:order-2 h-full min-h-[400px]">
-<div class="absolute inset-0 bg-stone-50 rounded-full scale-90 md:scale-100 blur-3xl opacity-50"></div>
-<img alt="The Architect Backpack Detail" class="relative z-10 w-full max-w-lg object-contain drop-shadow-2xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUw2NMe8xTmjRAuRdAR80Cr0t78iT_xdXJ8BD56Hv9p2Ogo5U6T1iR1xxRT9URoYiED9k8j8jfB5o00tlRXtGxX7z31uAyZ55Y2Sb5sF_2EOQZt2mllGWLWWIdKijr2jXZFntLSfdk2Y3xfTMwQXKNAcl4PljcGee4_9weKdVtt1i0CrEdOMTfhKvMd9Ej0FWqtCimiMgR4JXaGwqyxw42FBxHxGLeRWOP6o1kIpOU9tkp0893_eZS-bDo_a6MuYRYLUHqu4xPlg"/>
-</div>
-</div>
+<!-EACS Bag -->
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="SFS convertable totepack" class="w-full h-full object-cover transition-all duration-500" src="/Users/laurenmusshorn/Desktop/Codex/Bags/Bags-3.jpg"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS Convertable Totepack</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A sleek, canvas bag that can easily convert from a backpack into a tote.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩40,000</div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfoWpG5pk5BKNU8BJBQUOKdLWWZuOsM_NTtjpSYqObTT587Iw/viewform" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
+<!--- LMA penicl Case -->
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Standing Pencil Case" class="w-full h-full object-cover transition-all duration-500" src="/Users/laurenmusshorn/Desktop/Codex/Bags/Bags-4.jpg"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Standing Pencil Case</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Our product is a rectangular standing pencil case that can fold into a triangle, from which you can extract your utensils.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩29,900</div>
+      <a href="https://forms.gle/4gn6sKkMg22YbfZX8" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
+<!-LCM Bag ---> 
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Missing bag product" class="w-full h-full object-cover transition-all duration-500" src="/Users/laurenmusshorn/Desktop/Codex/Bags/Bags-5.jpg"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Missing</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Description missing.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">Price Missing</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
 </section>
-<!-- Product Grid: Exactly 7 Items -->
-<section class="px-8 py-16 bg-surface-container-low">
-<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-<!-- Product 1 -->
-<div class="bg-surface-container-lowest p-6 group cursor-pointer flex flex-col h-full">
-<div class="overflow-hidden rounded-sm mb-4 aspect-square">
-<img alt="The Architect Backpack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUw2NMe8xTmjRAuRdAR80Cr0t78iT_xdXJ8BD56Hv9p2Ogo5U6T1iR1xxRT9URoYiED9k8j8jfB5o00tlRXtGxX7z31uAyZ55Y2Sb5sF_2EOQZt2mllGWLWWIdKijr2jXZFntLSfdk2Y3xfTMwQXKNAcl4PljcGee4_9weKdVtt1i0CrEdOMTfhKvMd9Ej0FWqtCimiMgR4JXaGwqyxw42FBxHxGLeRWOP6o1kIpOU9tkp0893_eZS-bDo_a6MuYRYLUHqu4xPlg"/>
-</div>
-<div class="flex justify-between items-center mb-1">
-<h4 class="text-lg font-bold">The Architect v1.0</h4>
-<span class="text-primary font-bold">$185</span>
-</div>
-<p class="text-sm text-on-surface-variant mb-4">Our flagship middle school carry with student-mapped compartments.</p>
-<div class="mt-auto"><button class="w-full py-3 bg-primary text-on-primary font-bold text-sm hover:opacity-90 transition-all bg-[#a80033] text-white">Quick View</button></div>
-</div>
-<!-- Product 2 -->
-<div class="bg-surface-container-lowest p-6 group cursor-pointer flex flex-col h-full">
-<div class="overflow-hidden rounded-sm mb-4 aspect-square">
-<img alt="Student Tote" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A heavy-duty minimalist white canvas tote bag with bold black typography and red stitching details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs7MPzjOT_pbP564Oh_covNTQqptMLzLGx-aCdlYQ78AVDjjOP9UNyk5dJY0MrxayMUyGRSBWmrhONdqXhKb36HYo-ZhS7JEnafUu0fxyx3QcIZrpEAXHabIpfYcmgutVdIeFmPIFLmb7leKxMwHiIpPDIJ8xiYbOxsCrq1EcqD_0Yu6pZT5eI2xv3tqoi1GUCcPVfiERXeJqY5OhVMh8Cb9HJRCPAFLtqYb1hUjs4CNwFmfzeZpLjTqqxU17oX53pw9TxaMN7ZQ"/>
-</div>
-<div class="flex justify-between items-center mb-1">
-<h4 class="text-lg font-bold">Mono Tote</h4>
-<span class="text-on-surface-variant font-bold">$65</span>
-</div>
-<p class="text-sm text-on-surface-variant mb-4">Water-resistant industrial canvas for art students.</p>
-<div class="mt-auto"><button class="w-full py-3 bg-primary text-on-primary font-bold text-sm hover:opacity-90 transition-all bg-[#a80033] text-white">Quick View</button></div>
-</div>
-<!-- Product 3 -->
-<div class="bg-surface-container-lowest p-6 group cursor-pointer flex flex-col h-full">
-<div class="overflow-hidden rounded-sm mb-4 aspect-square">
-<img alt="Digital Sleeve" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Slim professional laptop sleeve in dark grey textured felt with a vibrant red elastic closure" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrootWu8qgznw7BdXCyGVXashItZLfaOm44e3w7wgrIUMQKdkKv8VpePt70VJcx79HKU6_hgRD7auEpNruN-UgdOu025OLcDWlUoCmVCNCR29him2kohu3z8lPWA4yt1Zf-eUZxN6W69gz4-qBA1GiOfn90OjWowcKhEU2FseOXkvA4PNpH2EvP0qjHIJoA3uVkKY_YSiXQKPDpYJH3QxOGiQnKv50o_YUSQ_07ha9vypE4P3_lvhqwOM6xo7j6A0mm8jKebkPGg"/>
-</div>
-<div class="flex justify-between items-center mb-1">
-<h4 class="text-lg font-bold">Neural Sleeve</h4>
-<span class="text-on-surface-variant font-bold">$45</span>
-</div>
-<p class="text-sm text-on-surface-variant mb-4">Hard-shell protection for school-issued tablets.</p>
-<div class="mt-auto"><button class="w-full py-3 bg-primary text-on-primary font-bold text-sm hover:opacity-90 transition-all bg-[#a80033] text-white">Quick View</button></div>
-</div>
-<!-- Product 4 -->
-<div class="bg-surface-container-lowest p-6 group cursor-pointer flex flex-col h-full">
-<div class="overflow-hidden rounded-sm mb-4 aspect-square">
-<img alt="Athletic Duffel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sporty cylindrical duffel bag in matte black with reflective red branding elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNXzK3plh_wA_I7TuFiQ3QXgxkUaF3kBdsstEE5m9AwduiAKB7VKgHfRifzXA5KCFk5CX7-bAvdj52eHaqebjudpqQC6uySEfhGYiEzOhmtAP3iu4BXRT0uhumw05M1yIAXiooZ6zO6IXLGak-qhj3fZRXJ4STJM2nH-8jJzTzKVH6rZBY9V4rFmuDuz4K6xIoqoYN4FijsEW3BLs2eT8DVWb6n3Q8z-2rs397HMKu6BLZ0IgI175jbBTMNUEh3QSBGnIbjOacsw"/>
-</div>
-<div class="flex justify-between items-center mb-1">
-<h4 class="text-lg font-bold">Varsity Duffel</h4>
-<span class="text-on-surface-variant font-bold">$120</span>
-</div>
-<p class="text-sm text-on-surface-variant mb-4">High-capacity storage for sports gear and kits.</p>
-<div class="mt-auto"><button class="w-full py-3 bg-primary text-on-primary font-bold text-sm hover:opacity-90 transition-all bg-[#a80033] text-white">Quick View</button></div>
-</div>
-<!-- Product 5 -->
-<div class="bg-surface-container-lowest p-6 group cursor-pointer flex flex-col h-full">
-<div class="overflow-hidden rounded-sm mb-4 aspect-square">
-<img alt="Commuter Mini" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Small compact backpack in vibrant red technical fabric with multiple utility clips" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgbnuqKhWVPsl3BKM0DFAB_HErzUJFABy15tDamX7Daq6V6aGcXBS-w88ZcScIS027KbX9cV8NoCNKXf-l3sqf1Wlr_HREqu5bjswGdaSqiCxu4iioYtMMeE1UMhraKav9ngW-0UwlLNzr7Fk7UcR4YQh_61Ku-jYa5Te-wZfZ0YHy8YFZNJ_rkdeUXIUFyXtsF-lotpWIuOJzckeQa3eZ-WD8StbbGwHRc7nea0sgAAFqO6P2sRt5DelCb467YgteO7cLtHBSYQ"/>
-</div>
-<div class="flex justify-between items-center mb-1">
-<h4 class="text-lg font-bold">Commuter Mini</h4>
-<span class="text-on-surface-variant font-bold">$85</span>
-</div>
-<p class="text-sm text-on-surface-variant mb-4">Compact carry for off-campus field trips.</p>
-<div class="mt-auto"><button class="w-full py-3 bg-primary text-on-primary font-bold text-sm hover:opacity-90 transition-all bg-[#a80033] text-white">Quick View</button></div>
-</div>
-<!-- Product 6 -->
-<div class="bg-surface-container-lowest p-6 group cursor-pointer flex flex-col h-full">
-<div class="overflow-hidden rounded-sm mb-4 aspect-square bg-surface-container">
-<div class="w-full h-full flex items-center justify-center">
-<span class="material-symbols-outlined text-stone-300 scale-[4]">image</span>
-</div>
-</div>
-<div class="flex justify-between items-center mb-1">
-<h4 class="text-lg font-bold">Tech Satchel</h4>
-<span class="text-on-surface-variant font-bold">$95</span>
-</div>
-<p class="text-sm text-on-surface-variant mb-4">Padded messenger for MS Coding Labs.</p>
-<div class="mt-auto"><button class="w-full py-3 bg-primary text-on-primary font-bold text-sm hover:opacity-90 transition-all bg-[#a80033] text-white">Quick View</button></div>
-</div>
-<!-- Product 7 -->
-<div class="bg-surface-container-lowest p-6 group cursor-pointer flex flex-col h-full">
-<div class="overflow-hidden rounded-sm mb-4 aspect-square bg-surface-container">
-<div class="w-full h-full flex items-center justify-center">
-<span class="material-symbols-outlined text-stone-300 scale-[4]">image</span>
-</div>
-</div>
-<div class="flex justify-between items-center mb-1">
-<h4 class="text-lg font-bold">Lunch Vault</h4>
-<span class="text-on-surface-variant font-bold">$35</span>
-</div>
-<p class="text-sm text-on-surface-variant mb-4">Insulated, modular food storage unit.</p>
-<div class="mt-auto"><button class="w-full py-3 bg-primary text-on-primary font-bold text-sm hover:opacity-90 transition-all bg-[#a80033] text-white">Quick View</button></div>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-</body></html>
+
+  </main>
+</body>
+</html>
