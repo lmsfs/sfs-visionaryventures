@@ -78,25 +78,46 @@
     </script>
 <style>
         body { font-family: 'Manrope', sans-serif; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
+             .material-symbols-outlined {
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+              }
+
         .editorial-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 2rem;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 2rem;
+                align-items: stretch;
+              }
+      
+        .product-card {
+          display: flex;
+          flex-direction: column;
+          height: 100%;
         }
+
+        .product-card .product-copy {
+                display: flex;
+          flex-direction: column;
+          flex: 1;
+        }
+
+        .product-card .product-footer {
+          margin-top: auto;
+        }
+
         @media (max-width: 1024px) {
-            .editorial-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
+          .editorial-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
         }
+
         @media (max-width: 640px) {
-            .editorial-grid {
-                grid-template-columns: 1fr;
-            }
+          .editorial-grid {
+            grid-template-columns: 1fr;
+          }
         }
-    </style>
+      </style>
+
 </head>
 <body class="bg-surface text-on-surface">
 <!-- Top Navigation Bar, links to the other pages -->
@@ -151,7 +172,7 @@
 <div class="container mx-auto">
 <div class="editorial-grid">
 <!-- SNEA Sweatshirt -->
-      <article class="group cursor-pointer">
+      <article class="group cursor-pointer product-card">
             <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
                   <img alt="Apex Performance Tee - Red cotton with embroidery" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-1.png"/>
             </div>
@@ -166,7 +187,8 @@
 
       </article>
 <!-- AKC Sweatshirt  -->
-<article class="group cursor-pointer">
+      <article class="group cursor-pointer product-card">
+
       <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
             <img alt="Shadow Tech Hoodie - Black heavyweight oversized" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-2.png"/>
       </div>
@@ -178,7 +200,7 @@
       </a>
 </article>
 <!-- IBJ Sweatshirt -->
-      <article class="group cursor-pointer">
+     <article class="group cursor-pointer product-card">
       <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
             <img alt="Binary Graphic Tee - White with red geometric print" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-3.png"/>
       </div>
@@ -190,7 +212,7 @@
       </a>
       </article>
 <!-- JEJ Sweatshirt -->
-      <article class="group cursor-pointer">
+      <article class="group cursor-pointer product-card">
       <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
       <img alt="Aero Shell Jacket - Red and white technical jacket" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-4.jpg"/>
       </div>
@@ -202,7 +224,7 @@
       </a>
       </article>
 <!-- Row 2: Item 5 -->
-      <article class="group cursor-pointer md:col-start-1 lg:col-start-1">
+      <article class="group cursor-pointer product-card">
       <div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
       <img alt="SFS Reversible Hoodie" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="Clothing-5.jpg"/>
       </div>
@@ -213,32 +235,6 @@
       <a href="https://forms.gle/8zHZCkHF7LWfMu7A8r" target="_blank" rel="noopener noreferrer" class="bg-primary text-on-primary px-4 py-2 rounded text-xs font-bold hover:bg-primary-container transition-all uppercase tracking-wider">Buy Now 
       </a>
       </article>
-<!-- Row 2: Item 6 -->
-<article class="group cursor-pointer">
-<div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
-<img alt="Ink Core Tee - Premium black cotton staple" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHHURlWGiMdQVGsyJjgzvT55JJsmVGAzBlyaieeCO8rIM9F1PwcGtiI2fa9bTNY-20Lxsc1r8JPSrYuuZwUf6TRQRu1-tXOoAKg4OmMB7MXuvVrReqdEtnNtkSSZhFO2sXEJgB0wKxoWt5JV1GAEmt1d_7sKvHll7VAS7lt8QAPiJsQZoHsqyz7Bt7N69l4xOLO94QWjVGe0Pq1adrWlO8wOuFca-vKy5niIRRdodp6XElKBguOy7GyxfI-tjrn9Pp1IfaSGFeCA"/>
-</div>
-<span class="label-md uppercase tracking-widest text-[10px] text-on-surface-variant font-bold mb-2 block">Essentials</span>
-<h3 class="text-xl font-bold text-on-surface mb-1">Ink Core Tee</h3>
-<p class="text-on-surface-variant text-sm mb-4">The fundamental building block of the MS wardrobe. Reinforced seams for durability.</p>
-<div class="flex justify-between items-center">
-<span class="font-black text-on-surface">$28.00</span>
-<button class="bg-primary text-on-primary px-4 py-2 rounded text-xs font-bold hover:bg-primary-container transition-all uppercase tracking-wider">Buy Now</button>
-</div>
-</article>
-<!-- Row 2: Item 7 -->
-<article class="group cursor-pointer">
-<div class="aspect-[3/4] bg-surface-container-lowest rounded-sm overflow-hidden mb-6">
-<img alt="Minimalist Crew - Clean white sweatshirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcVV9Uw20PgbLTLldUaNe5-7go_5JDntT4v6XRQbf-MXmLW5Ffekk8RsB5Dp5JfEC59ue4yV4SirBc6Q3D5tOFznQCS_xaz83G6q7K6y0t0dn6LBBN6gYLgtRXyx4PFD5W1JSjxVmEeIG1xl7Gd8lj6lUJnoDvlQAjGe_MWNbIDUAxQZNeEr7TKsbk9gpDA8mnRauR2tbp2CHmk2j_Uv98GnygtMngOxfArjnx0L3lkm20_95N4gtzuWTVG1ATeQhcbzGWegKtCQ"/>
-</div>
-<span class="label-md uppercase tracking-widest text-[10px] text-primary font-bold mb-2 block">Curator Pick</span>
-<h3 class="text-xl font-bold text-on-surface mb-1">Minimalist Crew</h3>
-<p class="text-on-surface-variant text-sm mb-4">Clean lines meet ultimate comfort in this student-curated staple.</p>
-<div class="flex justify-between items-center">
-<span class="font-black text-on-surface">$55.00</span>
-<button class="bg-primary text-on-primary px-4 py-2 rounded text-xs font-bold hover:bg-primary-container transition-all uppercase tracking-wider">Buy Now</button>
-</div>
-</article>
 </div>
 </div>
 </section>
