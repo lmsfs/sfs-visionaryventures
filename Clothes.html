@@ -119,7 +119,7 @@
     <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
       <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
         <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-          <img alt="Modern Archive Black Hoodie" class="w-full h-full object-cover transition-all duration-500" src="Clothing-1.png"/>
+          <img alt="Modern Archive Black Hoodie" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="Clothing-1.png"/>
         </div>
         <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Modern Archive Black Hoodie</h3>
         <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A cosy black hoodie made from a blend of polyester and cotton, the customizable Modern Archive hoodie is a staple in any closet and an ideal piece for summer.</p>
@@ -131,7 +131,7 @@
 
       <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
         <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-          <img alt="Missing clothing product" class="w-full h-full object-cover transition-all duration-500" src="Clothing-2.png"/>
+          <img alt="Missing clothing product" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="Clothing-2.png"/>
         </div>
         <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Missing</h3>
         <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">MISSING</p>
@@ -143,7 +143,7 @@
 
       <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
         <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-          <img alt="SFS essentials zip-up hoodie" class="w-full h-full object-cover transition-all duration-500" src="Clothing-3.png"/>
+          <img alt="SFS essentials zip-up hoodie" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="Clothing-3.png"/>
         </div>
         <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS Essentials Zip-Up Hoodie</h3>
         <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">SFS Essentials introduces an upgraded zip-up hoodie that builds on the strengths of our previous designs, offering improved comfort, durability, and style tailored perfectly for everyday school wear.</p>
@@ -155,7 +155,7 @@
 
       <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
         <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-          <img alt="SFS House Hoodies" class="w-full h-full object-cover transition-all duration-500" src="Clothing-4.jpg"/>
+          <img alt="SFS House Hoodies" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="Clothing-4.jpg"/>
         </div>
         <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS House Hoodies</h3>
         <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Our House Hoodies will feature simple, modern designs with a house animal on the back of the hoodie.</p>
@@ -167,7 +167,7 @@
 
       <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
         <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-          <img alt="SFS Reversible Hoodie" class="w-full h-full object-cover transition-all duration-500" src="Clothing-5.jpg"/>
+          <img alt="SFS Reversible Hoodie" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="Clothing-5.jpg"/>
         </div>
         <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS Reversible Hoodie</h3>
         <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A unique, aesthetic reversible hoodie that has two design in one.</p>
@@ -178,6 +178,33 @@
       </div>
     </section>
   </main>
+  <div id="image-lightbox" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/80 p-6">
+  <img id="lightbox-image" src="" alt="Expanded product image" class="max-w-full max-h-full object-contain shadow-2xl">
+</div>
+
+<script>
+  const lightbox = document.getElementById('image-lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const clickableImages = document.querySelectorAll('.product-image');
+
+  clickableImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightbox.classList.remove('hidden');
+      lightbox.classList.add('flex');
+    });
+  });
+
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) {
+      lightbox.classList.add('hidden');
+      lightbox.classList.remove('flex');
+      lightboxImage.src = '';
+    }
+  });
+</script>
+
 </body>
 </html>
 
