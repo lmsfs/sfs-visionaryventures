@@ -123,7 +123,7 @@
    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
   <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
     <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-      <img alt="Prism Pendant" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+      <img alt="Prism Pendant" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="PUT IMAGE HERE"/>
     </div>
     <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Prism Pendant</h3>
     <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">3D-printed architectural silver alloy pendant with a hand-polished finish. Designed by Grade 8 Design Studio.</p>
@@ -135,7 +135,7 @@
 
   <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
     <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-      <img alt="Crest Key Fob" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+      <img alt="Crest Key Fob" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="PUT IMAGE HERE"/>
     </div>
     <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Crest Key Fob</h3>
     <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Vegetable-tanned leather with signature red stitching. Hand-burnished edges for premium durability.</p>
@@ -148,7 +148,7 @@
   <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
     <div class="aspect-square overflow-hidden mb-6 bg-surface-container relative">
       <div class="absolute top-4 left-4 bg-primary text-white text-[0.65rem] font-black px-3 py-1 uppercase tracking-widest z-10 rounded-sm">Limited</div>
-      <img alt="Neo-Geo Tech Case" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+      <img alt="Neo-Geo Tech Case" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="PUT IMAGE HERE"/>
     </div>
     <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Neo-Geo Tech Case</h3>
     <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">High-impact resistant case featuring student-designed abstract graphics. Matte finish with UV protection.</p>
@@ -160,7 +160,7 @@
 
   <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
     <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-      <img alt="Trek Bracelet" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+      <img alt="Trek Bracelet" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="PUT IMAGE HERE"/>
     </div>
     <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Trek Bracelet</h3>
     <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Hand-woven paracord with an industrial-grade magnetic clasp. Designed for active daily wear.</p>
@@ -172,7 +172,7 @@
 
   <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
     <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-      <img alt="Botanical Drops" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+      <img alt="Botanical Drops" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="PUT IMAGE HERE"/>
     </div>
     <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Botanical Drops</h3>
     <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Clear eco-resin studs containing hand-picked, preserved campus flora. Surgical steel posts.</p>
@@ -184,7 +184,7 @@
 
   <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
     <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
-      <img alt="Pixel Mascot Charm" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+      <img alt="Pixel Mascot Charm" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="PUT IMAGE HERE"/>
     </div>
     <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Pixel Mascot Charm</h3>
     <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Laser-cut acrylic charm with dual-layer depth. Perfect for backpacks and tech pouches.</p>
@@ -210,7 +210,40 @@
   </div>
 </section>
   </main>
-    </div>
-  </footer>
+   <div id="image-lightbox" class="fixed inset-0 z-50 hidden bg-black/80 p-6">
+  <div class="flex h-full w-full items-center justify-center">
+    <img
+      id="lightbox-image"
+      src=""
+      alt="Expanded product image"
+      class="max-h-full max-w-full object-contain shadow-2xl"
+    />
+  </div>
+</div>
+
+<script>
+  const lightbox = document.getElementById('image-lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const clickableImages = document.querySelectorAll('.product-image');
+
+  clickableImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightbox.classList.remove('hidden');
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.add('hidden');
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+  });
+
+  lightboxImage.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+</script>
+
 </body>
 </html>
