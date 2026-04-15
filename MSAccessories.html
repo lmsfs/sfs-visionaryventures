@@ -1,245 +1,216 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "tertiary-fixed": "#e3e2e4",
-                    "on-surface-variant": "#5c3f41",
-                    "on-primary-fixed": "#40000e",
-                    "tertiary": "#525355",
-                    "tertiary-fixed-dim": "#c6c6c8",
-                    "surface-container-highest": "#e2e2e2",
-                    "on-tertiary-fixed-variant": "#454749",
-                    "outline-variant": "#e4bdbf",
-                    "outline": "#906f70",
-                    "surface-tint": "#be003b",
-                    "surface-container": "#eeeeee",
-                    "on-error-container": "#93000a",
-                    "secondary-fixed-dim": "#c6c6c6",
-                    "on-tertiary-container": "#edecef",
-                    "on-background": "#1a1c1c",
-                    "primary-fixed": "#ffdadb",
-                    "inverse-on-surface": "#f0f1f1",
-                    "surface": "#f9f9f9",
-                    "tertiary-container": "#6a6b6d",
-                    "secondary-container": "#e2e2e2",
-                    "inverse-surface": "#2f3131",
-                    "on-tertiary-fixed": "#1a1c1d",
-                    "background": "#f9f9f9",
-                    "on-secondary-container": "#646464",
-                    "on-secondary-fixed": "#1b1b1b",
-                    "on-primary-fixed-variant": "#91002b",
-                    "on-tertiary": "#ffffff",
-                    "on-surface": "#1a1c1c",
-                    "primary-container": "#d31145",
-                    "error": "#ba1a1a",
-                    "primary": "#a80033",
-                    "inverse-primary": "#ffb2b7",
-                    "secondary-fixed": "#e2e2e2",
-                    "on-secondary": "#ffffff",
-                    "on-primary-container": "#ffe7e8",
-                    "surface-container-lowest": "#ffffff",
-                    "on-error": "#ffffff",
-                    "surface-container-high": "#e8e8e8",
-                    "surface-variant": "#e2e2e2",
-                    "on-primary": "#ffffff",
-                    "surface-dim": "#dadada",
-                    "secondary": "#5e5e5e",
-                    "surface-bright": "#f9f9f9",
-                    "surface-container-low": "#f3f3f4",
-                    "error-container": "#ffdad6",
-                    "on-secondary-fixed-variant": "#474747",
-                    "primary-fixed-dim": "#ffb2b7"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Manrope"],
-                    "body": ["Manrope"],
-                    "label": ["Manrope"]
-            }
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Accessories | SFS Marketplace</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-fixed": "#e3e2e4",
+            "on-surface-variant": "#5c3f41",
+            "on-primary-fixed": "#40000e",
+            "tertiary": "#525355",
+            "tertiary-fixed-dim": "#c6c6c8",
+            "surface-container-highest": "#e2e2e2",
+            "on-tertiary-fixed-variant": "#454749",
+            "outline-variant": "#e4bdbf",
+            "outline": "#906f70",
+            "surface-tint": "#be003b",
+            "surface-container": "#eeeeee",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#c6c6c6",
+            "on-tertiary-container": "#edecef",
+            "on-background": "#1a1c1c",
+            "primary-fixed": "#ffdadb",
+            "inverse-on-surface": "#f0f1f1",
+            "surface": "#f9f9f9",
+            "tertiary-container": "#6a6b6d",
+            "secondary-container": "#e2e2e2",
+            "inverse-surface": "#2f3131",
+            "on-tertiary-fixed": "#1a1c1d",
+            "background": "#f9f9f9",
+            "on-secondary-container": "#646464",
+            "on-secondary-fixed": "#1b1b1b",
+            "on-primary-fixed-variant": "#91002b",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1a1c1c",
+            "primary-container": "#d31145",
+            "error": "#ba1a1a",
+            "primary": "#a80033",
+            "inverse-primary": "#ffb2b7",
+            "secondary-fixed": "#e2e2e2",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#ffe7e8",
+            "surface-container-lowest": "#ffffff",
+            "on-error": "#ffffff",
+            "surface-container-high": "#e8e8e8",
+            "surface-variant": "#e2e2e2",
+            "on-primary": "#ffffff",
+            "surface-dim": "#dadada",
+            "secondary": "#5e5e5e",
+            "surface-bright": "#f9f9f9",
+            "surface-container-low": "#f3f3f4",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#474747",
+            "primary-fixed-dim": "#ffb2b7"
           },
-        },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
+        }
       }
-    </script>
-<style>
-        body { font-family: 'Manrope', sans-serif; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .line-clamp-2 {
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;  
-            overflow: hidden;
-        }
-    </style>
+    }
+  </script>
+  <style>
+    body { font-family: 'Manrope', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
 </head>
 <body class="bg-surface text-on-surface antialiased">
 
-<!--- Top Nav Bar --->      
-<nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
-  <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
-    <a href="index.html">SFS Marketplace</a>
+  <nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
+    <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
+      <a href="index.html">SFS Marketplace</a>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html">Toys</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html">Bags</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html">Accessories</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html">Clothing</a>
+    </div>
+    <div class="flex items-center gap-4"></div>
+  </nav>
+
+  <main class="pt-32 pb-24 px-8 md:px-12 lg:px-24 max-w-7xl mx-auto">
+    <header class="mb-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div class="max-w-3xl">
+        <span class="font-label text-[0.75rem] tracking-widest text-primary font-bold uppercase mb-4 block">CURATED COLLECTION</span>
+        <h1 class="font-headline text-6xl md:text-8xl lg:text-9xl font-extrabold tracking-tighter text-on-surface leading-[0.85] mb-8">
+          Accessories
+        </h1>
+        <p class="text-on-surface-variant text-xl leading-relaxed font-light">
+          Discover a curated collection of handcrafted jewelry, bespoke tech cases, and artistic keychains designed by the Middle School Design Lab.
+        </p>
+      </div>
+      <div class="w-full aspect-square md:aspect-video bg-surface-container-highest overflow-hidden">
+        <img
+          alt="High-end display of artisan student-made accessories"
+          class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+          src="SFS Visionary Ventures_FAV_01 (1).png"
+        />
+      </div>
+    </header>
+
+   <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Prism Pendant" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Prism Pendant</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">3D-printed architectural silver alloy pendant with a hand-polished finish. Designed by Grade 8 Design Studio.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩24,000</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
   </div>
 
-  <div class="hidden md:flex items-center gap-6">
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html"> Toys</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html"> Bags</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html"> Accessories</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html"> Clothing </a>
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Crest Key Fob" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Crest Key Fob</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Vegetable-tanned leather with signature red stitching. Hand-burnished edges for premium durability.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩15,500</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
   </div>
 
-  <div class="flex items-center gap-4"></div>
-</nav>
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container relative">
+      <div class="absolute top-4 left-4 bg-primary text-white text-[0.65rem] font-black px-3 py-1 uppercase tracking-widest z-10 rounded-sm">Limited</div>
+      <img alt="Neo-Geo Tech Case" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Neo-Geo Tech Case</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">High-impact resistant case featuring student-designed abstract graphics. Matte finish with UV protection.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩32,000</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
 
-      
-<main class="pt-16 max-w-full mx-auto">
-<section class="bg-white px-8 py-16 md:py-24 border-b border-zinc-100 mb-16">
-<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-12">
-<div class="max-w-xl">
-<span class="font-label text-[0.75rem] tracking-widest uppercase text-primary font-bold mb-4 block">Student Built • Curated Edition</span>
-<h1 class="font-headline text-5xl md:text-8xl font-black tracking-tighter text-on-surface mb-8">Accessories</h1>
-<p class="font-body text-xl text-on-surface-variant leading-relaxed mb-10">
-                        Discover a curated collection of handcrafted jewelry, bespoke tech cases, and artistic keychains—designed and prototyped by the Middle School Design Lab.
-                    </p>
-</div>
-<div class="w-full md:w-1/2 aspect-square md:aspect-[4/3] rounded-2xl overflow-hidden bg-zinc-100 shadow-2xl">
-<img class="w-full h-full object-cover" data-alt="high-end display of artisan student-made accessories including a red tech case and leather keychains" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqaLqx56IIipW2dde_Fy5qrEjKBtXn3fphOa_DoW8ld8EkMrukouGEPSckMF1WkbYFvDistRPhCJwQDxJCUMucOviBagAbWPzjWKkYfQpucGjSNDBowk72dAgqd2TuzwADE1Fksc7jtllLjNxAlNBsP87LLYAEuNOz6iN7KScM48VVv6x2q84m8ok50wQA5kITyuJ9Tf9swmHs3aMtLJF9V_Z7RvXDS9detIaWhjIZ5PvWnPjevstjiSeU7bTAaxpmL-FnIFrjnw"/>
-</div>
-</div>
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Trek Bracelet" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Trek Bracelet</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Hand-woven paracord with an industrial-grade magnetic clasp. Designed for active daily wear.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩12,000</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Botanical Drops" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Botanical Drops</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Clear eco-resin studs containing hand-picked, preserved campus flora. Surgical steel posts.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩19,000</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Pixel Mascot Charm" class="w-full h-full object-cover transition-all duration-500" src="PUT IMAGE HERE"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">Pixel Mascot Charm</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Laser-cut acrylic charm with dual-layer depth. Perfect for backpacks and tech pouches.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩9,500</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
+
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container flex items-center justify-center border-2 border-dashed border-zinc-200">
+      <div class="text-center p-8">
+        <span class="material-symbols-outlined text-4xl text-zinc-300 mb-4">inventory_2</span>
+        <p class="font-body text-sm text-zinc-400">More student designs arriving soon for the Fall Collection</p>
+      </div>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2 opacity-50">Coming Soon</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">The next wave of Middle School innovation is currently in the prototyping phase.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4 opacity-50">TBD</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
 </section>
-<section class="px-8 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 mb-24 lg:grid-cols-4">
-<article class="group bg-surface-container-lowest rounded-md overflow-hidden transition-all duration-300">
-<div class="aspect-square overflow-hidden bg-surface-container-low rounded-sm">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close-up of a handcrafted geometric silver necklace resting on a minimalist white stone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4VTSyrPb1kGdmls1HO4F5ZOM9ye-57WszWSTr-HNvM5tNu4VYOZ9tUIKMHAUKojFxY6m6S3QZpyRnMCrr2prUU00qQv0UAlz2SchvixTOhQYNhtrXgFeAJWluGyb-UreJWLQ2g6MHYzHP4MNBdFGIgnaRGRwybE9mL_OUQ8yqRvy3H-WzkPVCBicZDp_XHEc8_F0BJAJb0_ih98mS9XSe_Z2jPEmML_a8NgrgDMQZG8HsQMMBviaW2MVlFklzRK45zpSpv01nZQ"/>
-</div>
-<div class="pt-8 pb-4">
-<div class="flex justify-between items-start mb-3">
-<h3 class="font-headline text-xl font-bold text-on-surface">Prism Pendant</h3>
-<span class="font-body text-lg font-medium text-primary">₩24,000</span>
-</div>
-<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed line-clamp-2 h-10">3D-printed architectural silver alloy pendant with a hand-polished finish. Designed by Grade 8 Design Studio.</p>
-<button class="w-full py-4 border border-zinc-900 text-zinc-900 font-bold tracking-tight rounded-md hover:bg-zinc-900 hover:text-white transition-all active:scale-95">
-                        Buy Now
-                    </button>
-</div>
-</article>
-<article class="group bg-surface-container-lowest rounded-md overflow-hidden transition-all duration-300">
-<div class="aspect-square overflow-hidden bg-surface-container-low rounded-sm">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="handcrafted leather keychain with crimson red stitching" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCprhP0BmtO-JblRoHOGANZP340nATMzqQqw2rmq1HIS9m11LUAMl-idKw_IiiTwKyN07kn6TNP0sxZnj5i7icY-PM-NF5fIB4EhTr4PqFGlAiyd0y0GfFQBFNp513vWpjjF3ctmoM8TSHgZzWb2MjdZlMJKdKgIU6oJB66bWF_pX1aoM2VEb6JiTc1YRJYadmrSMclR18ZuZYw7dYZ33CZ4dyTIFzVnDF8CnUm99u7ar1V0mZiBKElYK1nqmnPT5xtaHXqx7XlYg"/>
-</div>
-<div class="pt-8 pb-4">
-<div class="flex justify-between items-start mb-3">
-<h3 class="font-headline text-xl font-bold text-on-surface">Crest Key Fob</h3>
-<span class="font-body text-lg font-medium text-primary">₩15,500</span>
-</div>
-<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed line-clamp-2 h-10">Vegetable-tanned leather with signature red stitching. Hand-burnished edges for premium durability.</p>
-<button class="w-full py-4 border border-zinc-900 text-zinc-900 font-bold tracking-tight rounded-md hover:bg-zinc-900 hover:text-white transition-all active:scale-95">
-                        Buy Now
-                    </button>
-</div>
-</article>
-<article class="group bg-surface-container-lowest rounded-md overflow-hidden transition-all duration-300">
-<div class="aspect-square overflow-hidden bg-surface-container-low rounded-sm relative">
-<div class="absolute top-4 left-4 bg-primary text-white text-[0.65rem] font-black px-3 py-1 uppercase tracking-widest z-10 rounded-sm">Limited</div>
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="glossy red smartphone case with abstract geometric patterns" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqaLqx56IIipW2dde_Fy5qrEjKBtXn3fphOa_DoW8ld8EkMrukouGEPSckMF1WkbYFvDistRPhCJwQDxJCUMucOviBagAbWPzjWKkYfQpucGjSNDBowk72dAgqd2TuzwADE1Fksc7jtllLjNxAlNBsP87LLYAEuNOz6iN7KScM48VVv6x2q84m8ok50wQA5kITyuJ9Tf9swmHs3aMtLJF9V_Z7RvXDS9detIaWhjIZ5PvWnPjevstjiSeU7bTAaxpmL-FnIFrjnw"/>
-</div>
-<div class="pt-8 pb-4">
-<div class="flex justify-between items-start mb-3">
-<h3 class="font-headline text-xl font-bold text-on-surface">Neo-Geo Tech Case</h3>
-<span class="font-body text-lg font-medium text-primary">₩32,000</span>
-</div>
-<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed line-clamp-2 h-10">High-impact resistant case featuring student-designed abstract graphics. Matte finish with UV protection.</p>
-<button class="w-full py-4 border border-zinc-900 text-zinc-900 font-bold tracking-tight rounded-md hover:bg-zinc-900 hover:text-white transition-all active:scale-95">
-                        Buy Now
-                    </button>
-</div>
-</article>
-<article class="group bg-surface-container-lowest rounded-md overflow-hidden transition-all duration-300">
-<div class="aspect-square overflow-hidden bg-surface-container-low rounded-sm">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="braided paracord bracelet in school colors" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeSD7Ami2havX--Hn_1pG-nQ7cbyl1FBfF6UdSn_Vls1DIVWf4AGxXJoFf5K9X3izfklyIJYhPO-fVSQjRbLtt3Wd-5hdsv9B078r6XRRNSPYcKQsV4xw3aRB-LaxvQrlrILWMJOohs0xZS-sWzqYCn3HdgcG4pexK05r-V-dgtbWgen0fvz0rYuAn-AizJwY-lH_EtH79pdh-H_MP4-yVSBEwtK2qOEGXFbP_mhkj60VuAAP9Mtb8nw2WqPDrXsh_WRmTSMDWIw"/>
-</div>
-<div class="pt-8 pb-4">
-<div class="flex justify-between items-start mb-3">
-<h3 class="font-headline text-xl font-bold text-on-surface">Trek Bracelet</h3>
-<span class="font-body text-lg font-medium text-primary">₩12,000</span>
-</div>
-<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed line-clamp-2 h-10">Hand-woven paracord with an industrial-grade magnetic clasp. Designed for active daily wear.</p>
-<button class="w-full py-4 border border-zinc-900 text-zinc-900 font-bold tracking-tight rounded-md hover:bg-zinc-900 hover:text-white transition-all active:scale-95">
-                        Buy Now
-                    </button>
-</div>
-</article>
-<article class="group bg-surface-container-lowest rounded-md overflow-hidden transition-all duration-300">
-<div class="aspect-square overflow-hidden bg-surface-container-low rounded-sm">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="minimalist resin earrings with suspended red flower petals" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMPoFyJ3rzc-MyqvgUhzmMZq0PNo8MFIP8xBBWKMSlgObzrMRqNQTdN4c5UOTKMAwIgC2GXzQOutbAjovAcl4WCWVMJ2wPwxqGOx62i0kP6BIeJkE33ECEg2FaZTrZShbiYwwERv9936VrWKWvyNekO-9VeloFLfeg34JsJNxPdqMofAiCl8w5SR7ogh0KnDGrUtZ9VSn9D-ytQyDd4Gsy1sBUJA99wP0dKKPf5AJ5crR2QGsH3wm8TPVawB7iC45PLzhreKEDzw"/>
-</div>
-<div class="pt-8 pb-4">
-<div class="flex justify-between items-start mb-3">
-<h3 class="font-headline text-xl font-bold text-on-surface">Botanical Drops</h3>
-<span class="font-body text-lg font-medium text-primary">₩19,000</span>
-</div>
-<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed line-clamp-2 h-10">Clear eco-resin studs containing hand-picked, preserved campus flora. Surgical steel posts.</p>
-<button class="w-full py-4 border border-zinc-900 text-zinc-900 font-bold tracking-tight rounded-md hover:bg-zinc-900 hover:text-white transition-all active:scale-95">
-                        Buy Now
-                    </button>
-</div>
-</article>
-<article class="group bg-surface-container-lowest rounded-md overflow-hidden transition-all duration-300">
-<div class="aspect-square overflow-hidden bg-surface-container-low rounded-sm">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="acrylic bag charm with pixel art design of a school mascot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsaKobXYjI7bQwzcXgWd92xeXe68kHREaiOSR3uaQnia4pWMkerVZrXQsfLftcf2RNm5mJVxo78EMOcBUxbm-fDYiA-MeknqqxaAYd-7U-DNDwf4T1anVGASrPzq5DC5mSrMvacaHFIpY-LFNyBgpZELPzcfSqu2OBijMjaq4nBnZKBFPJf14dfhMBq37nWWEXk-Q6GZgKShuI0NGju0hLGtR6H0M6A5zsyro1c5iVA9ESXTtuX9hEED1BRi_bD_76J35zxIDOTw"/>
-</div>
-<div class="pt-8 pb-4">
-<div class="flex justify-between items-start mb-3">
-<h3 class="font-headline text-xl font-bold text-on-surface">Pixel Mascot Charm</h3>
-<span class="font-body text-lg font-medium text-primary">₩9,500</span>
-</div>
-<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed line-clamp-2 h-10">Laser-cut acrylic charm with dual-layer depth. Perfect for backpacks and tech pouches.</p>
-<button class="w-full py-4 border border-zinc-900 text-zinc-900 font-bold tracking-tight rounded-md hover:bg-zinc-900 hover:text-white transition-all active:scale-95">
-                        Buy Now
-                    </button>
-</div>
-</article>
-<article class="group bg-surface-container-lowest rounded-md overflow-hidden transition-all duration-300">
-<div class="aspect-square overflow-hidden bg-surface-container-low rounded-sm flex items-center justify-center border-2 border-dashed border-zinc-200">
-<div class="text-center p-8">
-<span class="material-symbols-outlined text-4xl text-zinc-300 mb-4">inventory_2</span>
-<p class="font-body text-sm text-zinc-400">More student designs arriving soon for the Fall Collection</p>
-</div>
-</div>
-<div class="pt-8 pb-4">
-<div class="flex justify-between items-start mb-3">
-<h3 class="font-headline text-xl font-bold text-on-surface opacity-50">Coming Soon</h3>
-<span class="font-body text-lg font-medium text-primary opacity-50">TBD</span>
-</div>
-<p class="font-body text-sm text-on-surface-variant mb-6 leading-relaxed line-clamp-2 h-10">The next wave of Middle School innovation is currently in the prototyping phase.</p>
-<button class="w-full py-4 border border-zinc-200 text-zinc-300 font-bold tracking-tight rounded-md cursor-not-allowed">
-                        Buy Now
-                    </button>
-</div>
-</article>
-</section>
-</main>
-<footer class="w-full border-t border-zinc-200 bg-white flex flex-col md:flex-row justify-between items-center px-12 py-10 font-manrope text-xs tracking-widest uppercase">
-<div class="text-center md:text-left">
-<div class="text-lg font-bold text-zinc-900 mb-2">Seoul Foreign School</div>
-<div class="text-zinc-500">© 2024 Seoul Foreign School. All Rights Reserved.</div>
-</div>
-</footer>
-</body></html>
+  </main>
+    </div>
+  </footer>
+</body>
+</html>
