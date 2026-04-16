@@ -288,6 +288,7 @@
     </div>
   </section>
 </main>
+      <!--- Zoom on images when you click them--->
 <div id="image-lightbox" class="fixed inset-0 z-50 hidden bg-black/80 p-6">
   <div class="flex h-full w-full items-center justify-center">
     <img
@@ -319,6 +320,33 @@
 
   lightboxImage.addEventListener('click', (event) => {
     event.stopPropagation();
+  });
+</script>
+<!--- Pop up notification --->
+<div id="brand-popup" class="fixed inset-0 z-[200] flex items-center justify-center bg-black/50 p-6">
+  <div class="w-full max-w-lg bg-white p-6 md:p-8 shadow-2xl">
+    <p class="text-[0.75rem] font-bold tracking-widest uppercase text-primary mb-3">Important Note</p>
+    <h2 class="font-headline text-2xl font-extrabold tracking-tight text-on-surface mb-4">
+      Product Designs May Change
+    </h2>
+    <p class="text-on-surface-variant text-sm leading-relaxed mb-6">
+      Final product designs may be adjusted to comply with Seoul Foreign School brand guidelines. Images shown are prototypes or draft visuals and may differ slightly from the final approved version.
+    </p>
+    <button
+      id="close-brand-popup"
+      class="w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors"
+    >
+      I Understand
+    </button>
+  </div>
+</div>
+
+<script>
+  const brandPopup = document.getElementById('brand-popup');
+  const closeBrandPopup = document.getElementById('close-brand-popup');
+
+  closeBrandPopup.addEventListener('click', () => {
+    brandPopup.classList.add('hidden');
   });
 </script>
 
