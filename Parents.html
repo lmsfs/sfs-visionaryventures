@@ -1,234 +1,184 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "tertiary-fixed": "#e3e2e4",
-                    "on-surface-variant": "#5c3f41",
-                    "on-primary-fixed": "#40000e",
-                    "tertiary": "#525355",
-                    "tertiary-fixed-dim": "#c6c6c8",
-                    "surface-container-highest": "#e2e2e2",
-                    "on-tertiary-fixed-variant": "#454749",
-                    "outline-variant": "#e4bdbf",
-                    "outline": "#906f70",
-                    "surface-tint": "#be003b",
-                    "surface-container": "#eeeeee",
-                    "on-error-container": "#93000a",
-                    "secondary-fixed-dim": "#c6c6c6",
-                    "on-tertiary-container": "#edecef",
-                    "on-background": "#1a1c1c",
-                    "primary-fixed": "#ffdadb",
-                    "inverse-on-surface": "#f0f1f1",
-                    "surface": "#f9f9f9",
-                    "tertiary-container": "#6a6b6d",
-                    "secondary-container": "#e2e2e2",
-                    "inverse-surface": "#2f3131",
-                    "on-tertiary-fixed": "#1a1c1d",
-                    "background": "#f9f9f9",
-                    "on-secondary-container": "#646464",
-                    "on-secondary-fixed": "#1b1b1b",
-                    "on-primary-fixed-variant": "#91002b",
-                    "on-tertiary": "#ffffff",
-                    "on-surface": "#1a1c1c",
-                    "primary-container": "#d31145",
-                    "error": "#ba1a1a",
-                    "primary": "#a80033",
-                    "inverse-primary": "#ffb2b7",
-                    "secondary-fixed": "#e2e2e2",
-                    "on-secondary": "#ffffff",
-                    "on-primary-container": "#ffe7e8",
-                    "surface-container-lowest": "#ffffff",
-                    "on-error": "#ffffff",
-                    "surface-container-high": "#e8e8e8",
-                    "surface-variant": "#e2e2e2",
-                    "on-primary": "#ffffff",
-                    "surface-dim": "#dadada",
-                    "secondary": "#5e5e5e",
-                    "surface-bright": "#f9f9f9",
-                    "surface-container-low": "#f3f3f4",
-                    "error-container": "#ffdad6",
-                    "on-secondary-fixed-variant": "#474747",
-                    "primary-fixed-dim": "#ffb2b7"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "fontFamily": {
-                    "headline": ["Manrope"],
-                    "body": ["Manrope"],
-                    "label": ["Manrope"]
-            }
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Parents | SFS Marketplace</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "tertiary-fixed": "#e3e2e4",
+            "on-surface-variant": "#5c3f41",
+            "on-primary-fixed": "#40000e",
+            "tertiary": "#525355",
+            "tertiary-fixed-dim": "#c6c6c8",
+            "surface-container-highest": "#e2e2e2",
+            "on-tertiary-fixed-variant": "#454749",
+            "outline-variant": "#e4bdbf",
+            "outline": "#906f70",
+            "surface-tint": "#be003b",
+            "surface-container": "#eeeeee",
+            "on-error-container": "#93000a",
+            "secondary-fixed-dim": "#c6c6c6",
+            "on-tertiary-container": "#edecef",
+            "on-background": "#1a1c1c",
+            "primary-fixed": "#ffdadb",
+            "inverse-on-surface": "#f0f1f1",
+            "surface": "#f9f9f9",
+            "tertiary-container": "#6a6b6d",
+            "secondary-container": "#e2e2e2",
+            "inverse-surface": "#2f3131",
+            "on-tertiary-fixed": "#1a1c1d",
+            "background": "#f9f9f9",
+            "on-secondary-container": "#646464",
+            "on-secondary-fixed": "#1b1b1b",
+            "on-primary-fixed-variant": "#91002b",
+            "on-tertiary": "#ffffff",
+            "on-surface": "#1a1c1c",
+            "primary-container": "#d31145",
+            "error": "#ba1a1a",
+            "primary": "#a80033",
+            "inverse-primary": "#ffb2b7",
+            "secondary-fixed": "#e2e2e2",
+            "on-secondary": "#ffffff",
+            "on-primary-container": "#ffe7e8",
+            "surface-container-lowest": "#ffffff",
+            "on-error": "#ffffff",
+            "surface-container-high": "#e8e8e8",
+            "surface-variant": "#e2e2e2",
+            "on-primary": "#ffffff",
+            "surface-dim": "#dadada",
+            "secondary": "#5e5e5e",
+            "surface-bright": "#f9f9f9",
+            "surface-container-low": "#f3f3f4",
+            "error-container": "#ffdad6",
+            "on-secondary-fixed-variant": "#474747",
+            "primary-fixed-dim": "#ffb2b7"
           },
-        },
-      }
-    </script>
-<style>
-        body { font-family: 'Manrope', sans-serif; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
         }
-        .text-editorial-lg { font-size: 3.5rem; line-height: 1; letter-spacing: -0.02em; }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Manrope', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary">
+<body class="bg-surface text-on-surface antialiased">
 
-<!-- Top Navigation Bar, links to the other pages -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
-  <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
-    <a href="index.html">SFS Marketplace</a>
-  </div>
+  <nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
+    <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
+      <a href="index.html">SFS Marketplace</a>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html">Toys</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html">Bags</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html">Accessories</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html">Clothing</a>
+    </div>
+    <div class="flex items-center gap-4"></div>
+  </nav>
 
-  <div class="hidden md:flex items-center gap-6">
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html"> Toys</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html"> Bags</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html"> Accessories</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html"> Clothing </a>
-  </div>
-
-  <div class="flex items-center gap-4"></div>
-</nav>
-
-      
-<main class="px-8 max-w-7xl mx-auto pt-24 pb-16">
-      <header class="flex flex-col md:flex-row items-center gap-12 min-h-[300px] mb-12">
-      <div class="flex-1 flex flex-col justify-center order-2 md:order-1">
-      <span class="font-label text-xs tracking-widest uppercase text-primary font-bold mb-4 block">Collection 2024</span>
-      <h1 class="text-editorial-lg font-black text-on-surface uppercase mb-6">Parents</h1>
-      <p class="text-on-surface-variant font-body text-lg max-w-md leading-relaxed">
-                A curated exhibition of student-crafted excellence. Each piece bridges the gap between classroom innovation and the warmth of the home.
-            </p>
+  <main class="pt-32 pb-24 px-8 md:px-12 lg:px-24 max-w-7xl mx-auto">
+    <header class="mb-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div class="max-w-3xl">
+        <span class="font-label text-[0.75rem] tracking-widest text-primary font-bold uppercase mb-4 block">CURATED COLLECTION</span>
+        <h1 class="font-headline text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter text-on-surface leading-[0.95] mb-8">
+          Parents
+        </h1>
+        <p class="text-on-surface-variant text-xl leading-relaxed font-light">
+          A curated exhibition of student-crafted excellence. Each piece bridges the gap between classroom innovation and the warmth of the home.
+        </p>
       </div>
-      <div class="w-full bg-surface-container-highest flex items-center justify-center p-6 md:p-8">
-      <img
-          alt="Logo"
-          class="w-full max-w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-700"
-            src="SFS Visionary Ventures_FAV_01 (1).png"
+      <div class="w-full flex items-center justify-center">
+        <img
+          alt="Visionary Ventures logo"
+          class="w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-700"
+          src="SFS Visionary Ventures_FAV_01 (1).png"
         />
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+    
+      <!--DRJ Shirt--->    
+      <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+        <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+          <img alt="SFS Parent T-Shirts" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="/Users/laurenmusshorn/Desktop/Codex/Parents 2/Parents-2.jpg"/>
         </div>
-</header>
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-<!-- Product 1 -->
-<article class="group bg-surface-container-lowest p-4 rounded-lg transition-all duration-300">
-      <div class="relative aspect-square overflow-hidden mb-4 rounded-sm">
-            <img alt="SFS Parent TShirts" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="Jenna, Renee, Dael.jpg"/>
-            <div class="absolute top-2 left-2">
-                  <span class="bg-primary text-on-primary text-[9px] font-black px-2 py-0.5 uppercase tracking-widest">Handcrafted</span>
-            </div>
+        <h3 class="font-headline text-xl font-bold tracking-tight mb-2">MISSING</h3>
+        <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Basic white short-sleeve shirts made for SFS parents, with "SFS Dad" or "SFS Mom" labels.</p>
+        <div class="mt-auto">
+          <div class="text-lg font-bold mb-4">₩30,000</div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8ELjP9_25q5nWiDW3arT9ctgaNX8rbGjjs3rzlTbYOtG2Ag/viewform?usp=publish-editor" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+        </div>
       </div>
-      <div class="flex justify-between items-start mb-1">
-            <h3 class="text-sm font-extrabold text-on-surface uppercase tracking-tight truncate">SFS Parent TShirts</h3>
-            <span class="text-sm font-bold text-primary font-body ml-2">15,000 KRW </span>
+      <!- WAE Mugs --->
+      <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+        <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+          <img alt="SFS Branded Mugs" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="/Users/laurenmusshorn/Desktop/Codex/Parents 2/Parents-1.png"/>
+        </div>
+       <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS Branded Mugs</h3>
+        <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Have you ever wanted a mug that fits you no matter who you are? Well, we've got you at SFS branded mugs!</p>
+        <div class="mt-auto">
+          <div class="text-lg font-bold mb-4">₩15,000</div>
+          <a href="https://docs.google.com/forms/d/1RczGK_v_Skd89s8JDBiVGP_JcnX3PuwgFH3HQrB2EC0/edit" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+        </div>
       </div>
-      <p class="text-on-surface-variant text-[11px] font-body mb-4 leading-tight line-clamp-2">TShirts for SFS Families .</p>
-      <button class="w-full py-2 bg-on-surface text-surface font-label text-[10px] tracking-widest uppercase hover:bg-primary transition-all duration-300">Buy Now</button>
-</article>
-<!-- Product 2 -->
-<article class="group bg-surface-container-lowest p-4 rounded-lg transition-all duration-300">
-      <div class="relative aspect-square overflow-hidden mb-4 rounded-sm">
-            <img alt="The Legacy Suite" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQBSYNYYV3ZyC_llPc0-bQLJVZlJZJ5PB0YQQZT_M53NTej3yXnP1w5e6EQowcfJupCdMNRG0hwn1-Y9dGpzwEH6hZ4PRBBaWeMa2oBKQopjcZSg3LmcCDICq_O6a8ELNI3srax2-XfOZhRxORi-reedAZ3TkdtEgPLTEEZj5xACNFhAZbkVI2LwmW0HJ7rzdmZprCcpcBM_59Gun-dZnA6rv3uyQHV9ZkziIoWfgNmfklVMMdp8WppJ0BvhoomNjvjFHIQYQI5g"/>
-            <div class="absolute top-2 left-2">
-                  <span class="bg-on-surface text-surface text-[9px] font-black px-2 py-0.5 uppercase tracking-widest">Limited Edition</span>
-            </div>
-      </div>
-      <div class="flex justify-between items-start mb-1">
-            <h3 class="text-sm font-extrabold text-on-surface uppercase tracking-tight truncate">The Legacy Suite</h3>
-            <span class="text-sm font-bold text-primary font-body ml-2">$45</span>
-      </div>
-      <p class="text-on-surface-variant text-[11px] font-body mb-4 leading-tight line-clamp-2">Hand-pressed stationery on 300gsm cotton paper with embossed iconography.</p>
-      <button class="w-full py-2 bg-on-surface text-surface font-label text-[10px] tracking-widest uppercase hover:bg-primary transition-all duration-300">Buy Now</button>
-</article>
-<!-- Product 3 -->
-<article class="group bg-surface-container-lowest p-4 rounded-lg transition-all duration-300">
-      <div class="relative aspect-square overflow-hidden mb-4 rounded-sm">
-            <img alt="Academic Geometry I" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGhSq1h01URBTatuA-ZSMtkapWo6X7EcpQ71KsivGD3eAbPi_Be1u_Ahs33sNnq9zsL9t3NzrJcy3XYh5mVfmFjTY63aPAqVmkRW_tiwtAAYdPef33WOBTnaf6sfHfMyXdFQujv7-r-tEepw_wvhGzMSVz8jWPyGJnubDTkW74DDkzKLLjQ9oEFk3qHHHUw4a6MRAQ1E986YdazCqN806Bt9lR3BVs0ItTatjQAMcQTa91X6J65liJVO1UG45oTW9iHrBzB7IVlQ"/>
-      </div>
-      <div class="flex justify-between items-start mb-1">
-            <h3 class="text-sm font-extrabold text-on-surface uppercase tracking-tight truncate">Academic Geometry I</h3>
-            <span class="text-sm font-bold text-primary font-body ml-2">$120</span>
-      </div>
-      <p class="text-on-surface-variant text-[11px] font-body mb-4 leading-tight line-clamp-2">Giclée print on archival paper exploring the architecture of SFS.</p>
-      <button class="w-full py-2 bg-on-surface text-surface font-label text-[10px] tracking-widest uppercase hover:bg-primary transition-all duration-300">Buy Now</button>
-</article>
-<!-- Product 4 -->
-<article class="group bg-surface-container-lowest p-4 rounded-lg transition-all duration-300">
-      <div class="relative aspect-square overflow-hidden mb-4 rounded-sm">
-            <img alt="Walnut Command" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyphjV3sUTPvB3hLeTda78-D16JKskh38pDP1WkYjXqKcGT6Swqru0uMXSKG3pRsJR2yhJBzhnO4AhrV3k_iIqEGU3Z_KCmjkap7eSY7pANQqAejhHBRf02yn2UoShVySjQDvecgi3sxedZL6Z492YLM5YlSfdM4LdoaoWj77oSsoyxvYy5BzMfK0uGkT8MDTzBwYc3D56vumhuhnYbn2rx0biBIDxhXEq8JehmWvJoCoNp-Wxe25H1HtJ-Bzu-gbCwyLjANsSRg"/>
-      </div>
-      <div class="flex justify-between items-start mb-1">
-            <h3 class="text-sm font-extrabold text-on-surface uppercase tracking-tight truncate">Walnut Command</h3>
-            <span class="text-sm font-bold text-primary font-body ml-2">$65</span>
-      </div>
-      <p class="text-on-surface-variant text-[11px] font-body mb-4 leading-tight line-clamp-2">Sustainable walnut organizer, CNC-milled and hand-finished by seniors.</p>
-      <button class="w-full py-2 bg-on-surface text-surface font-label text-[10px] tracking-widest uppercase hover:bg-primary transition-all duration-300">Buy Now</button>
-</article>
-<!-- Product 5 -->
-<article class="group bg-surface-container-lowest p-4 rounded-lg transition-all duration-300">
-      <div class="relative aspect-square overflow-hidden mb-4 rounded-sm">
-            <img alt="Harvest Linen Set" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAwooSy5OXniED5Z8SYDI5h36vVXnKG5Q6LG9oyVwXwunbNrxg65aHG8A161zt0J5mHmF7UCx7h0xvtty17R6qZsV8PVG0Xrvr5S_3CxIPh8-uXHQFp6R5ExdjJLlzTKnR2resvLkE14_J9jT-6SRJlX8na6MgML7jtghSUtLpLkGlUEIKjAHUhrOG5MUdcMjIEqp967Qw18FwoKMQqBGtrVRJ_VtHcgZ68wN5pHoNwNwkuEmCC3BwgFqM8wEriSfmnTHxjg2hng"/>
-      </div>
-      <div class="flex justify-between items-start mb-1">
-            <h3 class="text-sm font-extrabold text-on-surface uppercase tracking-tight truncate">Harvest Linen Set</h3>
-            <span class="text-sm font-bold text-primary font-body ml-2">$35</span>
-      </div>
-      <p class="text-on-surface-variant text-[11px] font-body mb-4 leading-tight line-clamp-2">Four-piece napkin set with student-embroidered floral motifs.</p>
-      <button class="w-full py-2 bg-on-surface text-surface font-label text-[10px] tracking-widest uppercase hover:bg-primary transition-all duration-300">Buy Now</button>
-</article>
-<!-- Product 6 -->
-<article class="group bg-surface-container-lowest p-4 rounded-lg transition-all duration-300">
-      <div class="relative aspect-square overflow-hidden mb-4 rounded-sm">
-            <img alt="Zenith Tea Set" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbyKYOxqGC6dJft1-TOoy0N6uwmTgjxVMC9owYZkZcyGREayKflY50-szA_s_ik2xEEIaoj8VvDVV1-rrP3xIgL9j_eQmvE014cF6x3kQVnca03TOG5bQxkrE5pIvVea0F0OTI6gp5kywW5oPMtbz6flqbllxBOIp8bGnWEQ_HKzA7nqEemnh6JiUt_Y89cPmQioClUnWxTLu-Ln3ExJ-NM57_GeQFQEScJOZVgiSuwaNTCLP2gzy79dZKLDE45eb5pLu4Oqy52w"/>
-      </div>
-      <div class="flex justify-between items-start mb-1">
-            <h3 class="text-sm font-extrabold text-on-surface uppercase tracking-tight truncate">Zenith Tea Set</h3>
-            <span class="text-sm font-bold text-primary font-body ml-2">$180</span>
-      </div>
-      <p class="text-on-surface-variant text-[11px] font-body mb-4 leading-tight line-clamp-2">Collector's grade ceramic set. Each vessel is unique and signed.</p>
-      <button class="w-full py-2 bg-on-surface text-surface font-label text-[10px] tracking-widest uppercase hover:bg-primary transition-all duration-300">Buy Now</button>
-</article>
-<!-- Product 7 -->
-<article class="group bg-surface-container-lowest p-4 rounded-lg transition-all duration-300">
-      <div class="relative aspect-square overflow-hidden mb-4 rounded-sm">
-            <img alt="Artisan Sketchbook" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeoyvPHE4Ca2mWqcrPhS8i4Y4E3b_fAfWVZtBBzimKyATTjiGongdlmorJNTz8Aq6aRgE4tNAX9kMOmLuEwWZSVJE1Fchz9MJf2HkUeJ4llm_nQdOoXJFwA4CjbyKMUrzSB6ZqYNoY4Y6M-PZOL9pD375iI0xqNXiZ1-ECg9m0rZyiiVRzo4qHXzxnA9n1ShEAY1yTknser5q-NAVYKdo0hosRZTuE929RifPYhNjfep-w7rLG3JTZieLRISKxkY59IkDczIiYIw"/>
-            <div class="absolute top-2 left-2">
-                  <span class="bg-primary text-on-primary text-[9px] font-black px-2 py-0.5 uppercase tracking-widest">New</span>
-            </div>
-      </div>
-      <div class="flex justify-between items-start mb-1">
-            <h3 class="text-sm font-extrabold text-on-surface uppercase tracking-tight truncate">Artisan Sketchbook</h3>
-            <span class="text-sm font-bold text-primary font-body ml-2">$22</span>
-      </div>
-      <p class="text-on-surface-variant text-[11px] font-body mb-4 leading-tight line-clamp-2">Linen-bound sketchbook with heavy-weight recycled art paper.</p>
-      <button class="w-full py-2 bg-on-surface text-surface font-label text-[10px] tracking-widest uppercase hover:bg-primary transition-all duration-300">Buy Now</button>
- </article>
-</div>
-</main>
-<footer class="w-full border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950">
-<div class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full">
-<div class="mb-6 md:mb-0">
-<span class="text-lg font-bold text-zinc-900 dark:text-zinc-50">Seoul Foreign School</span>
-<p class="font-manrope text-xs tracking-widest uppercase text-zinc-500 dark:text-zinc-500 mt-2">© 2024 Seoul Foreign School. All Rights Reserved.</p>
-</div>
-<div class="flex gap-8 font-manrope text-xs tracking-widest uppercase">
-<a class="text-zinc-500 dark:text-zinc-500 hover:text-red-700 dark:hover:text-red-400 transition-colors" href="#">About Us</a>
-<a class="text-zinc-500 dark:text-zinc-500 hover:text-red-700 dark:hover:text-red-400 transition-colors" href="#">Contact</a>
-<a class="text-zinc-500 dark:text-zinc-500 hover:text-red-700 dark:hover:text-red-400 transition-colors" href="#">Shipping Policy</a>
-<a class="text-zinc-500 dark:text-zinc-500 hover:text-red-700 dark:hover:text-red-400 transition-colors" href="#">Terms of Service</a>
-</div>
-</div>
-</footer>
-</body></html>
+
+    </section>
+  </main>
+
+  <footer class="bg-stone-50 py-12 px-8 flex items-center gap-6 font-['Manrope'] text-sm text-stone-500 border-t border-stone-200">
+    <div class="container mx-auto px-8 flex justify-center w-full">
+      <div class="text-stone-400">© 2024 Academic Curator Marketplace</div>
+    </div>
+  </footer>
+
+      <script>
+  const lightbox = document.getElementById('image-lightbox');
+  const lightboxImage = document.getElementById('lightbox-image');
+  const clickableImages = document.querySelectorAll('.product-image');
+
+  clickableImages.forEach((img) => {
+    img.addEventListener('click', () => {
+      lightboxImage.src = img.src;
+      lightboxImage.alt = img.alt;
+      lightbox.classList.remove('hidden');
+    });
+  });
+
+  lightbox.addEventListener('click', () => {
+    lightbox.classList.add('hidden');
+    lightboxImage.src = '';
+    lightboxImage.alt = '';
+  });
+
+  lightboxImage.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+</script>
+</body>
+</html>
+
