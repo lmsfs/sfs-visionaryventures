@@ -134,7 +134,7 @@
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSd8ELjP9_25q5nWiDW3arT9ctgaNX8rbGjjs3rzlTbYOtG2Ag/viewform?usp=publish-editor" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
         </div>
       </div>
-      <!- WAE Mugs --->
+      <!--WAE Mugs --->
       <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
         <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
           <img alt="SFS Branded Mugs" class="product-image w-full h-full object-cover transition-all duration-500 cursor-zoom-in" src="Parents-1.png"/>
@@ -149,14 +149,18 @@
 
     </section>
   </main>
+  <script>
+  <div id="image-lightbox" class="fixed inset-0 z-50 hidden bg-black/80 p-6">
+  <div class="flex h-full w-full items-center justify-center">
+    <img
+      id="lightbox-image"
+      src=""
+      alt="Expanded product image"
+      class="max-h-full max-w-full object-contain shadow-2xl"
+    />
+  </div>
+</div>
 
-  <footer class="bg-stone-50 py-12 px-8 flex items-center gap-6 font-['Manrope'] text-sm text-stone-500 border-t border-stone-200">
-    <div class="container mx-auto px-8 flex justify-center w-full">
-      <div class="text-stone-400">© 2024 Academic Curator Marketplace</div>
-    </div>
-  </footer>
-
-      <script>
   const lightbox = document.getElementById('image-lightbox');
   const lightboxImage = document.getElementById('lightbox-image');
   const clickableImages = document.querySelectorAll('.product-image');
