@@ -1,208 +1,183 @@
 <!DOCTYPE html>
-
-<html class="light" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Athletics | Innovation Lab</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    "colors": {
-                        "on-primary-container": "#ffe7e8",
-                        "surface-container-lowest": "#ffffff",
-                        "primary-container": "#d31145",
-                        "surface-container-low": "#f3f3f4",
-                        "tertiary-fixed-dim": "#c6c6c8",
-                        "inverse-primary": "#ffb2b7",
-                        "inverse-on-surface": "#f0f1f1",
-                        "on-error": "#ffffff",
-                        "surface-dim": "#dadada",
-                        "on-secondary-container": "#646464",
-                        "on-secondary-fixed-variant": "#474747",
-                        "on-secondary-fixed": "#1b1b1b",
-                        "surface-variant": "#e2e2e2",
-                        "on-tertiary": "#ffffff",
-                        "tertiary-container": "#6a6b6d",
-                        "secondary": "#5e5e5e",
-                        "on-secondary": "#ffffff",
-                        "error-container": "#ffdad6",
-                        "surface-container-highest": "#e2e2e2",
-                        "on-primary-fixed-variant": "#91002b",
-                        "on-tertiary-fixed-variant": "#454749",
-                        "on-error-container": "#93000a",
-                        "error": "#ba1a1a",
-                        "surface-container-high": "#e8e8e8",
-                        "primary-fixed": "#ffdadb",
-                        "primary-fixed-dim": "#ffb2b7",
-                        "background": "#f9f9f9",
-                        "outline": "#906f70",
-                        "on-background": "#1a1c1c",
-                        "on-primary-fixed": "#40000e",
-                        "surface-bright": "#f9f9f9",
-                        "tertiary": "#525355",
-                        "surface-container": "#eeeeee",
-                        "on-surface-variant": "#5c3f41",
-                        "inverse-surface": "#2f3131",
-                        "outline-variant": "#e4bdbf",
-                        "surface-tint": "#be003b",
-                        "on-primary": "#ffffff",
-                        "secondary-container": "#e2e2e2",
-                        "on-tertiary-fixed": "#1a1c1d",
-                        "on-tertiary-container": "#edecef",
-                        "on-surface": "#1a1c1c",
-                        "secondary-fixed-dim": "#c6c6c6",
-                        "tertiary-fixed": "#e3e2e4",
-                        "surface": "#f9f9f9",
-                        "secondary-fixed": "#e2e2e2",
-                        "primary": "#a80033"
-                    },
-                    "borderRadius": {
-                        "DEFAULT": "0.125rem",
-                        "lg": "0.25rem",
-                        "xl": "0.5rem",
-                        "full": "0.75rem"
-                    },
-                    "fontFamily": {
-                        "headline": ["Manrope"],
-                        "body": ["Manrope"],
-                        "label": ["Manrope"]
-                    }
-                },
-            },
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Athletics | SFS Marketplace</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "on-primary-container": "#ffe7e8",
+            "surface-container-lowest": "#ffffff",
+            "primary-container": "#d31145",
+            "surface-container-low": "#f3f3f4",
+            "tertiary-fixed-dim": "#c6c6c8",
+            "inverse-primary": "#ffb2b7",
+            "inverse-on-surface": "#f0f1f1",
+            "on-error": "#ffffff",
+            "surface-dim": "#dadada",
+            "on-secondary-container": "#646464",
+            "on-secondary-fixed-variant": "#474747",
+            "on-secondary-fixed": "#1b1b1b",
+            "surface-variant": "#e2e2e2",
+            "on-tertiary": "#ffffff",
+            "tertiary-container": "#6a6b6d",
+            "secondary": "#5e5e5e",
+            "on-secondary": "#ffffff",
+            "error-container": "#ffdad6",
+            "surface-container-highest": "#e2e2e2",
+            "on-primary-fixed-variant": "#91002b",
+            "on-tertiary-fixed-variant": "#454749",
+            "on-error-container": "#93000a",
+            "error": "#ba1a1a",
+            "surface-container-high": "#e8e8e8",
+            "primary-fixed": "#ffdadb",
+            "primary-fixed-dim": "#ffb2b7",
+            "background": "#f9f9f9",
+            "outline": "#906f70",
+            "on-background": "#1a1c1c",
+            "on-primary-fixed": "#40000e",
+            "surface-bright": "#f9f9f9",
+            "tertiary": "#525355",
+            "surface-container": "#eeeeee",
+            "on-surface-variant": "#5c3f41",
+            "inverse-surface": "#2f3131",
+            "outline-variant": "#e4bdbf",
+            "surface-tint": "#be003b",
+            "on-primary": "#ffffff",
+            "secondary-container": "#e2e2e2",
+            "on-tertiary-fixed": "#1a1c1d",
+            "on-tertiary-container": "#edecef",
+            "on-surface": "#1a1c1c",
+            "secondary-fixed-dim": "#c6c6c6",
+            "tertiary-fixed": "#e3e2e4",
+            "surface": "#f9f9f9",
+            "secondary-fixed": "#e2e2e2",
+            "primary": "#a80033"
+          },
+          borderRadius: {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          fontFamily: {
+            "headline": ["Manrope"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
         }
-    </script>
-<style>
-        body { font-family: 'Manrope', sans-serif; }
-        .no-scrollbar::-webkit-scrollbar { display: none; }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-    </style>
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Manrope', sans-serif; }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
 </head>
-<body class="bg-surface text-on-surface selection:bg-primary/20">
+<body class="bg-surface text-on-surface antialiased">
 
-        
-<!-- Top Navigation Bar, links to the other pages -->
-<nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
-  <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
-    <a href="index.html">SFS Marketplace</a>
+  <nav class="fixed top-0 w-full z-50 bg-[#f9f9f9]/95 backdrop-blur-md font-['Manrope'] tracking-tight flex justify-between items-center px-8 py-4 max-w-full mx-auto border-b border-zinc-200">
+    <div class="text-2xl font-black tracking-tighter text-[#1a1c1c]">
+      <a href="index.html">SFS Marketplace</a>
+    </div>
+    <div class="hidden md:flex items-center gap-6">
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html">Toys</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html">Bags</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html">Accessories</a>
+      <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html">Clothing</a>
+    </div>
+    <div class="flex items-center gap-4"></div>
+  </nav>
+
+  <main class="pt-32 pb-24 px-8 md:px-12 lg:px-24 max-w-7xl mx-auto">
+    <header class="mb-20 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div class="max-w-3xl">
+        <span class="font-label text-[0.75rem] tracking-widest text-primary font-bold uppercase mb-4 block">CURATED COLLECTION</span>
+        <h1 class="font-headline text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter text-on-surface leading-[0.95] mb-8">
+          Athletics
+        </h1>
+        <p class="text-on-surface-variant text-xl leading-relaxed font-light">
+          Elevated performance gear, engineered by the next generation of innovators.
+        </p>
+      </div>
+      <div class="w-full flex items-center justify-center">
+       <img
+          alt="Logo"
+          class="w-full max-w-full h-auto object-contain grayscale hover:grayscale-0 transition-all duration-700"
+            src="SFS Visionary Ventures_FAV_01 (1).png"
+        />
+        </div>
+      </div>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Missing athletics product" class="w-full h-full object-cover transition-all duration-500" src="Athletics-1.png"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">MISSING</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Missing description.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">Price Missing</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
   </div>
 
-  <div class="hidden md:flex items-center gap-6">
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="athletics.html">Athletics</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Parents.html">Parents</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MStoys.html"> Toys</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Bags.html"> Bags</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="MSAccessories.html"> Accessories</a>
-    <a class="text-[#5c3f41] font-medium hover:text-[#a80033] transition-colors duration-300" href="Clothes.html"> Clothing </a>
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Missing athletics product" class="w-full h-full object-cover transition-all duration-500" src="Athletics-2.png"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">MISSING</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Missing description.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">Price Missing</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
   </div>
 
-  <div class="flex items-center gap-4"></div>
-</nav>
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="Missing athletics product" class="w-full h-full object-cover transition-all duration-500" src="Athletics-3.jpg"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">MISSING</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">Missing description.</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">Price Missing</div>
+      <a href="PUT LINK HERE" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
 
-        
-<div class="flex pt-20 flex-col">
-<!-- Updated Hero Section -->
-<section class="bg-white w-full overflow-hidden flex flex-col md:flex-row items-center px-8 md:px-16 py-12 md:py-24 border-b border-surface-container">
-<div class="w-full md:w-1/2 flex flex-col justify-center">
-<h1 class="text-on-surface text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter mb-6 leading-none uppercase">Athletics</h1>
-<p class="text-on-surface-variant text-lg md:text-xl font-medium max-w-xl mb-8 leading-relaxed">Elevated performance gear, engineered by the next generation of innovators. Explore our curated selection of high-performance student-built equipment.</p>
-<div class="flex gap-4">
-<button class="bg-primary text-white px-8 py-4 text-sm font-bold uppercase tracking-widest hover:bg-primary-container hover:text-on-primary-container transition-colors">Explore All</button>
-</div>
-</div>
-<div class="w-full md:w-1/2 mt-12 md:mt-0 flex justify-end">
-<div class="relative w-full aspect-[4/3] md:aspect-square bg-surface-container-low overflow-hidden">
-<img alt="Athletics Featured" class="w-full h-full object-cover" data-alt="high-end minimalist shot of sports equipment on a clean white background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwTnNDKL1b83HgrDQJtMxkJ9WtBaDpAY4A01jws4cPPDt37CWRM0VefQZC0noIZZPSimxz-4Pmf7fVdG6Z_1t4idUPr9ifrg4x-IOArhHkRc8OduXecpEQy6V-wtfG23X0bYkB0Q7Duq4p2ojyHv1iV1vTZKxhu4BqhCd4hYCGM28alXQDP3exP0-oiI3jE0K5LTBZjp_AtYRG1YGqBRMUVKccyhALzlQHmupZeFp28yWmT20qUn91XlEIsLilA7fcLT3MabSRIQ"/>
-<div class="absolute inset-0 border-[24px] border-white/10 pointer-events-none"></div>
-</div>
-</div>
+  <div class="bg-surface-container-lowest p-6 flex flex-col group h-full">
+    <div class="aspect-square overflow-hidden mb-6 bg-surface-container">
+      <img alt="SFS Towel" class="w-full h-full object-cover transition-all duration-500" src="Athletics-4.jpg"/>
+    </div>
+    <h3 class="font-headline text-xl font-bold tracking-tight mb-2">SFS Towel</h3>
+    <p class="text-on-surface-variant font-light text-sm mb-6 flex-grow">A clean, compact hand towel made with 100% soft bamboo fiber that can save lives through its high-absorbency! (Sensitive Skin Friendly)</p>
+    <div class="mt-auto">
+      <div class="text-lg font-bold mb-4">₩10,000</div>
+      <a href="https://forms.gle/khbKFe9xEQsYYbwM8" class="block w-full bg-primary text-on-primary py-3 text-center font-label text-xs font-bold tracking-widest uppercase hover:bg-on-primary-fixed-variant transition-colors">Buy Now</a>
+    </div>
+  </div>
 </section>
-<!-- Main Content -->
-<main class="flex-1 min-w-0">
-<!-- Product Grid -->
-<section class="px-8 md:px-16 py-24">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-<!-- Product Card 1 -->
-<div class="group bg-surface-container-lowest p-6 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col border border-surface-container-high">
-<div class="aspect-square overflow-hidden mb-6 bg-surface-container-low">
-<img alt="Elite Runner Red" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIKoSikHfwgdp7GMwHVa_x3T3bULJ3PaJgASV-GJjskQiJi7vNq2ZovB1bY6gO7bCPZ35qR3pMZ-HeF8k2-LTWUuHHHF2GHHKeN7NLSA2lbMxHDWoMAuyxiwO3PZ15_YqFO1Au-wgIodpWIDLsCnpfF1rfAp3AEHsuO5vNKNuYaREnxAA5ty1udP2XU-yhWbXpp-0r-zvSSdlfZpbst_HNAW8i9RANDyaCp_oOsek0svZZ59cjDKuS-LIPtKkqfb-bU5wimxQiqA"/>
-</div>
-<p class="text-[10px] font-bold tracking-widest text-primary uppercase mb-2">Signature Series</p>
-<h4 class="text-lg font-bold text-on-surface mb-1">Pro-V1 Performance Runner</h4>
-<p class="text-sm text-on-surface-variant mb-4 flex-grow">The pinnacle of student engineering with ultimate energy return.</p>
-<div class="flex items-center justify-between">
-<span class="font-bold text-lg">$189.00</span>
-<a class="text-xs font-bold text-primary hover:underline uppercase tracking-widest" href="#">Buy Now</a>
-</div>
-</div>
-<!-- Product Card 2 -->
-<div class="group bg-surface-container-lowest p-6 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col border border-surface-container-high">
-<div class="aspect-square overflow-hidden mb-6 bg-surface-container-low">
-<img alt="Lab Series Basketball" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="professional textured leather basketball" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSSuW68X43e3BaWpZl-IL6Gpuhve9UiKYAZyLZ2daXe0kVgnM7m2s8vIJnNDYHWL7RH0lym5j7KW3BXWUKRHqJ5Th-82pDqHajPhdkhNzKKsXPGnH-WrZWHFw8ipKB5mczk1JOd_CkRyxgd5WyStvAhtHPZy76Jx_-NGXZwe3Ix0bgbaHdyXZvfwu5_gN3GEPgy3HuM0v9KDSnroTWn62gC4y1WTAfH_YW0gCcQzBSz3PAiZ6OPaIQ46kZMiTmcRvoMZRSbwOUPg"/>
-</div>
-<p class="text-[10px] font-bold tracking-widest text-primary uppercase mb-2">Equipment</p>
-<h4 class="text-lg font-bold text-on-surface mb-1">Grip-Tech Basketball</h4>
-<p class="text-sm text-on-surface-variant mb-4 flex-grow">Enhanced moisture-wicking surface for elite tournament play.</p>
-<div class="flex items-center justify-between"><span class="font-bold text-lg">$75.00</span><a class="text-xs font-bold text-primary hover:underline uppercase tracking-widest" href="#">Buy Now</a></div>
-</div>
-<!-- Product Card 3 -->
-<div class="group bg-surface-container-lowest p-6 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col border border-surface-container-high">
-<div class="aspect-square overflow-hidden mb-6 bg-surface-container-low">
-<img alt="Smart Hydrate" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="sleek modern black water bottle" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClpc61uepyx9TmdRLmxeDHteY890klQodA8pMCck6TZSaTnD57Go9JSdU6rKxTSGwtrpVi15ljIqVEET2Q3nokCMKrLeOEdzmfaFgaQRYdJIO_0OL_xn3HT5qMS5BNClAANJ4lwQGu5SwJ5UByrVsShOjdwgefG0UxtzKduQHKBjkXZefLmlBCL7GLmYCl6k_rTirMwPvB_CCm1ZbCo4UpHU_fntNi4Zly5sfxM_dL1Fh-1n-3VJjQaThRWyTN4F9nfkq60RpHag"/>
-</div>
-<p class="text-[10px] font-bold tracking-widest text-primary uppercase mb-2">Accessories</p>
-<h4 class="text-lg font-bold text-on-surface mb-1">Aero-Iso Flask</h4>
-<p class="text-sm text-on-surface-variant mb-4 flex-grow">72-hour temperature lock with integrated biometric tracking.</p>
-<div class="flex items-center justify-between"><span class="font-bold text-lg">$42.00</span><a class="text-xs font-bold text-primary hover:underline uppercase tracking-widest" href="#">Buy Now</a></div>
-</div>
-<!-- Product Card 4 -->
-<div class="group bg-surface-container-lowest p-6 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col border border-surface-container-high">
-<div class="aspect-square overflow-hidden mb-6 bg-surface-container-low">
-<img alt="Compression Pro" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="folded high-tech compression shirt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgob2mmmRas6bwrAMBfKwh4m2oGISny9nhcKnhU34iBlYrlbo16y-WmOmGwzPGovnVLi90GnDs9hwpVTMzQb6pq20MiQ2DW3nS60CKR_tx2IKupcCdmVKbp4ulLKrkHUV6Q7GuQy4FfVWHuTr6T6_q4Z1egdhYfxjjbSL1T0K3a_KrGUGgYH2s2-bl8uzC5XZtKlbk__j03wX5mB8YfFkTGTCHmlgXGXd8oke8qATyh2hOtFsVensisaihMinM8Kkzq7vxwA25jQ"/>
-</div>
-<p class="text-[10px] font-bold tracking-widest text-primary uppercase mb-2">Wearables</p>
-<h4 class="text-lg font-bold text-on-surface mb-1">Bio-Sync Tights</h4>
-<p class="text-sm text-on-surface-variant mb-4 flex-grow">Active muscle vibration reduction for faster post-game recovery.</p>
-<div class="flex items-center justify-between"><span class="font-bold text-lg">$95.00</span><a class="text-xs font-bold text-primary hover:underline uppercase tracking-widest" href="#">Buy Now</a></div>
-</div>
-<!-- Product Card 5 -->
-<div class="group bg-surface-container-lowest p-6 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col border border-surface-container-high">
-<div class="aspect-square overflow-hidden mb-6 bg-surface-container-low">
-<img alt="Pitch King" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="close-up of professional football boots" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdEWLTNwZDPzxp-xO8kT6TMriYIx3QIhWmalMWslsl_syPgd6rQVR12bwUCw-0WnuQegmdkD90XoPZDpgiMEr7GMbB-KFTxxk_LoIR8RdG5QYrya-Meo0vfjQuGdfF93pAB4Xkzo_UU0SkC9yzf69qxOzlOdTil8_8d0J3YwHcCNcAjy9SI9XsPkON8qxUxAC8efkDAf4xguOuWuQbhf95-Vji8siGvmIv9q-EDbHkNvLn8hWpFMIaHHWEs8qbB3aa0KkO7VPxRA"/>
-</div>
-<p class="text-[10px] font-bold tracking-widest text-primary uppercase mb-2">Team Wear</p>
-<h4 class="text-lg font-bold text-on-surface mb-1">Strikeforce Boots</h4>
-<p class="text-sm text-on-surface-variant mb-4 flex-grow">Precision control zone for unmatched accuracy in the final third.</p>
-<div class="flex items-center justify-between"><span class="font-bold text-lg">$160.00</span><a class="text-xs font-bold text-primary hover:underline uppercase tracking-widest" href="#">Buy Now</a></div>
-</div>
-<!-- Product Card 6 -->
-<div class="group bg-surface-container-lowest p-6 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col border border-surface-container-high">
-<div class="aspect-square overflow-hidden mb-6 bg-surface-container-low">
-<img alt="Zen Master" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="luxury student designed yoga mat" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaRdiqeQu8w31ZRifn7SmNHWqx4FdY5pRYMB7OayKPZosDZ23shrI9vEpKEwo85ONLxggB-BdqVhq6JozuyWfoBaU3Hmb_WCu5c98unIKHUfbJYuKZcbuyuff9KKmrh_OhRF9JvgvTNgizFBtxoAidpFuAXI6kQR6X7Cb-s7Ur8RcVTUx1o5ESFHX6r-dWZFETEl7t2qRaM7VCcOyfJPZhsREjenAg_DjQXtn-TRx20b0eJvGt9wMIg2hCJL6E_ITHZnimBiLjFQ"/>
-</div>
-<p class="text-[10px] font-bold tracking-widest text-primary uppercase mb-2">Equipment</p>
-<h4 class="text-lg font-bold text-on-surface mb-1">Aura Yoga Mat</h4>
-<p class="text-sm text-on-surface-variant mb-4 flex-grow">Self-sanitizing silver ion tech for the ultimate studio experience.</p>
-<div class="flex items-center justify-between"><span class="font-bold text-lg">$88.00</span><a class="text-xs font-bold text-primary hover:underline uppercase tracking-widest" href="#">Buy Now</a></div>
-</div>
-<!-- Product Card 7 -->
-<div class="group bg-surface-container-lowest p-6 transition-all hover:shadow-xl hover:shadow-primary/5 flex flex-col border border-surface-container-high">
-<div class="aspect-square overflow-hidden mb-6 bg-surface-container-low">
-<img alt="Variable Power" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="high-end red and black adjustable dumbbells" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHy1h4Nc2eh1rHfXcRQ9EjvbpFb3RzaTBZDN1rN15PmxKX2ScjJF6uRPxl7vOtk-PgjSQEWYTWimG3fzjaVwKxSuhLj4RKm4hQxfjR2vTGF10d0xPRnqgkymSxgqAthTaM_WO78oRqZZMaoq2sq5Ex9Q_oQDJ50_Rw351GOvHWcLFo4trE3LesfhR5M7yYhNWAQnD7OqSuZwMg1Vlh60yIsNKsGv0UDGB74myctk7yLfLj1LdNARzX2SjT3YK4-sV9qyIFg1cX1A"/>
-</div>
-<p class="text-[10px] font-bold tracking-widest text-primary uppercase mb-2">Equipment</p>
-<h4 class="text-lg font-bold text-on-surface mb-1">Impact Dumbbells</h4>
-<p class="text-sm text-on-surface-variant mb-4 flex-grow">Digital weight tracking with haptic feedback sensors.</p>
-<div class="flex items-center justify-between"><span class="font-bold text-lg">$210.00</span><a class="text-xs font-bold text-primary hover:underline uppercase tracking-widest" href="#">Buy Now</a></div>
-</div>
-</div>
-</section>
-</main>
-</div>
-</body></html>
+
+  </main>
+
+  <footer class="bg-stone-50 py-12 px-8 flex items-center gap-6 font-['Manrope'] text-sm text-stone-500 border-t border-stone-200">
+    <div class="container mx-auto px-8 flex justify-center w-full">
+      <div class="text-stone-400">© 2024 Academic Curator Marketplace</div>
+    </div>
+  </footer>
+</body>
+</html>
+
